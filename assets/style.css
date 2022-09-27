@@ -26,16 +26,18 @@ a, li {
 }
 
 /* NAVIGATION */
+
 h1 {
-  font-weight: 800px;
+    margin-left: -50px;
+    font-weight: 800px;
     font-family: "Caveat", cursive;
     font-size: 4rem;
-    color: black; 
+    color: var(--ivory); 
   }
   
   nav a {
     font-size: 1.5rem;
-    color: var(--malbec);
+    color: var(--ivory);
     text-transform: uppercase;
   }
   
@@ -52,7 +54,8 @@ h1 {
   }
   
   header {
-    background-color: var(--azul-verde);
+    width: 100%;
+    background-color: var(--malbec);
     padding: 0.8em 0;
   }
   
@@ -91,9 +94,9 @@ h2 {
 }
 
 .about  {
-  background-image: linear-gradient(var(--malbec), var(--jacaranda));
+  background-image: black;
   background-size: cover;
-    height: 640px;
+    height: 620px;
 }
 
 .about ul  {
@@ -133,6 +136,12 @@ h2 {
   width: 20vw;
   height: 20vw;
 }
+
+.about img:hover {
+  opacity: 70%;
+  transition: all 400ms ease-out;
+  cursor: pointer;
+}
 /* END ABOUT ME */
 
 
@@ -154,7 +163,7 @@ h3 {
 .work  {
   background-image: linear-gradient(var(--jacaranda), var(--azul-verde));
   background-size: cover;
-    height: 640px;
+    height: 670px;
 }
 
 .work ul  {
@@ -195,6 +204,44 @@ h3 {
   height: 30vw;
 
 }
+.work img:hover {
+  opacity: 80%;
+  transition: all 400ms ease-out;
+  cursor: pointer;
+}
+
+/* WORK SLIDER */
+.work-slider {
+  background-image: linear-gradient(var(--malbec), var(--jacaranda));
+  margin-top: 1px;
+}
+
+.work-slider li img {
+  background-color: ivory;
+  padding: 10px;
+  width: 280px;
+  height: 280px;
+}
+
+.work-slider ul{
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work-slider li {
+  margin: 80px;
+  
+}
+
+.work-slider img:hover {
+  opacity: 80%;
+  width: 300px;
+  height: 300px;
+  transition: all 400ms ease-out;
+  cursor: pointer;
+}
 
 
 
@@ -202,10 +249,14 @@ h3 {
 
 
 
-
-
-
-
+footer {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  color: var(--ivory);
+  font-size: 1vw;
+  text-align: center;
+}
 
 
 
@@ -229,7 +280,7 @@ h3 {
     margin-left:170px;
   }
   h3 {
-    margin-top: -130px;
+    margin-top: -60px;
     margin-left: 200px;
   }
   .bio {
@@ -257,7 +308,7 @@ h3 {
     position:absolute;
     width: 200px;
     height: 200px;
-    top: 1100px;
+    top: 1150px;
     left: 75px;
   }
   .work img {

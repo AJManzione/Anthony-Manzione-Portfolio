@@ -55,7 +55,7 @@
 Anthony Manzione - [@Instagram Handle](https://www.instagram.com/anthony.manzione/) - 
 [@Linkedin](https://www.linkedin.com/in/anthony-manzione-862b44250/)
 
-Project Link: [https://github.com/AJManzione/Code-refactor](https://github.com/AJManzione/Anthony-Manzione-Portfolio)
+Project Link: [https://github.com/AJManzione/Anthony-Manzione-Portfolio](https://ajmanzione.github.io/Anthony-Manzione-Portfolio/)
 
 
 

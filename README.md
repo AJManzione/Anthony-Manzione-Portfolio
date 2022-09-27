@@ -9,9 +9,18 @@
 - I learned how to create a website.
 
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+## Layout of the website
+![Alt Text](/assets/images/1.png)
+![Alt Text](/assets/images/2.png)
+![Alt Text](/assets/images/3.png)
 
+## Responsive at different screen widths 
 
+   The challenge of this project was getting the website to function properly and display cleanly all of the content inside while being at any screen size. I know that not all webasites are going to be viewed at full size and sometimes websites will be viewed on mobile, for this we used several advanced CSS features to solve the problem.
+
+## Example of mobile screen width
+
+![Alt Text](/assets/images/4.png)
 
 ## Credits
 
@@ -32,4 +41,22 @@
 ## License
 
  -MIT License
+
+ ### Built With
+
+* HTML
+* CSS
+* Git & GitHub
+
+
+<!-- CONTACT -->
+## Contact
+
+Anthony Manzione - [@Instagram Handle](https://www.instagram.com/anthony.manzione/) - 
+[@Linkedin](https://www.linkedin.com/in/anthony-manzione-862b44250/)
+
+Project Link: [https://github.com/AJManzione/Code-refactor](https://github.com/AJManzione/Anthony-Manzione-Portfolio)
+
+
+
 

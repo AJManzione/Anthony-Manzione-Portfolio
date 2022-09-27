@@ -274,7 +274,7 @@ footer #linkedin {
 
 
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .about li:first-child {
     display: none;
   }
@@ -289,7 +289,7 @@ footer p {
 
 
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
  
   h2, h3 {
     margin-left:170px;
@@ -354,7 +354,7 @@ footer p {
   nav li {
     padding: 0%;
   }
-}
+
 
 footer #github {
   margin: 15px 0 0 -290px ;
@@ -365,4 +365,3 @@ footer #github {
 footer #linkedin {
   margin: 40px -130px 0 0px;
 }
-

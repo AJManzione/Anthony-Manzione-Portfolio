@@ -1,3 +1,4 @@
+/* VARIABLES CREATED FOR WEB THEME */
 :root {
   --malbec:#351f39;
   --jacaranda:#726a95;
@@ -6,27 +7,34 @@
   --ivory: #f4e8c1;
 }
 
-
+/* STYLING THE ENTIRE CONTENT OF HTML */
 * {
     margin: 0%;
     padding: 0%;
     border: none;
 }
 
+/* STYLING EVERYTHING INSIDE BODY */
 body {
   background-color: black;
   font-family: "VT323", monospace;
   line-height: 1.5;
 }
 
-
+/* CLEARING UP BULLET POINTS AND UNDERLINES */
 a, li {
     list-style: none;
     text-decoration: none;
 }
+/* STYLING FOR MACRO ENDS ------------------------------------*/
+
+
+/* -------------------------------------------------------------NAVIGATION------------------------------------------------------------------ */
+
+
+/* STYLING FOR MICRO BEGINS ----------------------------------*/
 
 /* NAVIGATION */
-
 h1 {
     margin-left: -50px;
     font-weight: 800px;
@@ -35,68 +43,69 @@ h1 {
     color: var(--ivory); 
   }
   
-  nav a {
+nav a {
     font-size: 1.5rem;
     color: var(--ivory);
     text-transform: uppercase;
   }
   
-  .container {
+.container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
   }
   
-  .container-nav {
+.container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  header {
+header {
     width: 100%;
     background-color: var(--malbec);
     padding: 0.8em 0;
     box-shadow: 0px 10px 60px gray;
   }
   
-  nav ul {
+ nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav li {
+nav li {
     padding-left: 4em;
   }
   
-  nav a {
+nav a {
     text-decoration: none;
   }
   
-  nav a:hover, nav a:focus {
+nav a:hover, nav a:focus {
     color: yellow
 
   }
-/* END NAVIGATION */
+/* END NAVIGATION -----------------------------------*/
 
+/* ---------------------------------------------------------------ABOUT ME------------------------------------------------------------------ */
 
-/* ABOUT ME */
+/* ABOUT ME -----------------------------------------*/
 h2 {
-  margin:-60px 0 0 60px;
-  font-size: 6vw;
-  color: var(--ivory);
+    margin:-60px 0 0 60px;
+    font-size: 6vw;
+    color: var(--ivory);
 }
 
 .about  {
-  background-image: black;
-  background-size: cover;
+    background-image: black;
+    background-size: cover;
     height: 620px;
 }
 
@@ -113,11 +122,11 @@ h2 {
 }
 
 .about li:first-child {
-  height: 25vw;
-  width: 100vw;
-  padding: 1vw;
-  background-color: white;
-  margin-left: 60px;
+    height: 25vw;
+    width: 100vw;
+    padding: 1vw;
+    background-color: white;
+    margin-left: 60px;
 }
 .text {
 
@@ -127,43 +136,36 @@ h2 {
     text-transform: uppercase;
 }
 .bio {
-  width: 90%;
-  margin: 0px 0 0 60px;
-  color: var(--ivory);
-  font-size: 2.5vw;
+    width: 90%;
+    margin: 0px 0 0 60px;
+    color: var(--ivory);
+    font-size: 2.5vw;
 }
 
 .about img {
-  width: 20vw;
-  height: 20vw;
+    width: 20vw;
+    height: 20vw;
 }
 
 .about img:hover {
-  opacity: 70%;
-  transition: all 400ms ease-out;
-  cursor: pointer;
+    opacity: 70%;
+    transition: all 400ms ease-out;
+    cursor: pointer;
 }
-/* END ABOUT ME */
+/* END ABOUT ME ------------------------------------------*/
 
+/* ------------------------------------------------------------------WORK------------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-/* WORK SECTION */
-
+/* WORK SECTION ------------------------------------------*/
 h3 {
-  margin:-60px 0 0 60px;
-  font-size: 6vw;
-  color: var(--ivory);
+    margin:-60px 0 0 60px;
+    font-size: 6vw;
+    color: var(--ivory);
 }
 
 .work  {
-  background-image: linear-gradient(var(--jacaranda), var(--azul-verde));
-  background-size: cover;
+    background-image: linear-gradient(var(--jacaranda), var(--azul-verde));
+    background-size: cover;
     height: 670px;
 }
 
@@ -180,11 +182,11 @@ h3 {
 }
 
 .work li:first-child {
-  height: 33vw;
-  width: 100vw;
-  padding: 1vw;
-  background-color: white;
-  margin-left: 60px;
+    height: 33vw;
+    width: 100vw;
+    padding: 1vw;
+    background-color: white;
+    margin-left: 60px;
 }
 .work .text {
 
@@ -194,110 +196,120 @@ h3 {
     text-transform: uppercase;
 }
 .work .bio {
-  width: 90%;
-  margin: 0px 0 0 60px;
-  color: var(--ivory);
-  font-size: 2.5vw;
+    width: 90%;
+    margin: 0px 0 0 60px;
+    color: var(--ivory);
+    font-size: 2.5vw;
 }
 
 .work img {
-  width: 30vw;
-  height: 30vw;
+    width: 30vw;
+    height: 30vw;
 
 }
 .work img:hover {
-  opacity: 80%;
-  transition: all 400ms ease-out;
-  cursor: pointer;
+    opacity: 80%;
+    transition: all 400ms ease-out;
+    cursor: pointer;
 }
 
-/* WORK SLIDER */
+/* WORK SLIDER --------------------------------------------------------------------SLIDER----------------------------------------------------*/
 .work-slider {
-  background-image: linear-gradient(var(--malbec), var(--jacaranda));
-  margin-top: 1px;
+    background-image: linear-gradient(var(--malbec), var(--jacaranda));
+    margin-top: 1px;
 }
 
 .work-slider li img {
-  background-color: ivory;
-  padding: 10px;
-  width: 280px;
-  height: 280px;
+    background-color: ivory;
+    padding: 10px;
+    width: 280px;
+    height: 280px;
 }
 
 .work-slider ul{
-  width: fit-content;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .work-slider li {
-  margin: 80px;
+    margin: 80px;
   
 }
 
 .work-slider img:hover {
-  opacity: 80%;
-  width: 300px;
-  height: 300px;
-  transition: all 400ms ease-out;
-  cursor: pointer;
+    opacity: 80%;
+    width: 300px;
+    height: 300px;
+    transition: all 400ms ease-out;
+    cursor: pointer;
 }
+/* END WORK--------------------------------------- */
 
+/* -------------------------------------------------------------------FOOTER---------------------------------------------------------------- */
 
-
-
+/* FOOTER ---------------------------------------- */
 footer {
-  display: flex;
-  height: 130px;
-  width: 90%;
-  justify-content: space-around;
+    display: flex;
+    height: 130px;
+    width: 90%;
+    justify-content: space-around;
 }
 
 
 footer p {
-  padding-top: 60px;
-  color: var(--ivory);
-  font-size: 1vw;
-  text-align: center;
+    padding-top: 60px;
+    color: var(--ivory);
+    font-size: 1vw;
+    text-align: center;
 }
 
 footer #github {
-  margin: 25px 0 0 -90px ;
-  width: 1vw;
+    margin: 25px 0 0 -90px ;
+    width: 1vw;
 
 }
 
 footer #linkedin {
-  margin: 40px -130px 0 0px;
+    margin: 40px -130px 0 0px;
 }
+/* END FOOTER---------------------------------------------- */
 
+/* ----------------------------------------------------------------------MEDIA SCREENS------------------------------------------------------ */
 
+/* MEDIA SCREENS ------------------------------------------------992 PX--------------------------------------------------------------------- */
 
 @media screen and (max-width: 992px) {
   .about li:first-child {
     display: none;
   }
+
   .work li:first-child {
     display: none;
+  }
+
+  footer p {
+    display: none;
+  }
+
+.work-slider p {
+    display: none;
+  }
 }
 
-footer p {
-  display: none;
-}
 
-
-
-
+/* -------------------------------------------------------------640 PX---------------------------------------------------------------------- */
 @media screen and (max-width: 640px) {
- 
   h2, h3 {
     margin-left:170px;
   }
+
   h3 {
     margin-top: -60px;
     margin-left: 200px;
   }
+
   .bio {
     width: 80%;
     padding: 0%;
@@ -318,6 +330,7 @@ footer p {
     top: 540px;
     left: 75px;
   }
+
   .work li:first-child  {
     display: block;
     position:absolute;
@@ -326,19 +339,21 @@ footer p {
     top: 1150px;
     left: 75px;
   }
+
   .work img {
     width: 200px;
     height: 200px;
   }
+
   .about img {
     width: 200px;
     height: 200px;
   }
+
   .text {
     display: none;
   }
   
- 
   .container {
     text-align: center;
   }
@@ -355,13 +370,12 @@ footer p {
     padding: 0%;
   }
 
-
-footer #github {
+  footer #github {
   margin: 15px 0 0 -290px ;
   width: 1vw;
+  }
 
-}
-
-footer #linkedin {
+  footer #linkedin {
   margin: 40px -130px 0 0px;
+  }
 }

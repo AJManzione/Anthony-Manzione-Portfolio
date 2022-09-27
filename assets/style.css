@@ -1,8 +1,22 @@
+:root {
+  --malbec:#351f39;
+  --jacaranda:#726a95;
+  --bolivia:#709FB0;
+  --azul-verde:#A0c1B8;
+  --ivory: #f4e8c1;
+}
+
+
 * {
     margin: 0%;
     padding: 0%;
+    border: none;
 }
 
+body {
+  font-family: "VT323", monospace;
+  line-height: 1.5;
+}
 
 
 a, li {
@@ -15,12 +29,11 @@ h1 {
     font-family: "Caveat", cursive;
     font-size: 4rem;
     color: var(--ivory); 
-    margin: 0;
   }
   
   nav a {
     font-size: 1.5rem;
-    color: #f9f8eb;
+    color: var(--ivory);
     text-transform: uppercase;
   }
   
@@ -37,7 +50,7 @@ h1 {
   }
   
   header {
-    background-color: purple;
+    background-color: var(--malbec);
     padding: 0.8em 0;
     box-shadow: 1px 1px 400px gray
   }
@@ -70,36 +83,94 @@ h1 {
 
 
 
-
+h2 {
+  margin:-30px 0 0 80px;
+  font-size: 4rem;
+  color: var(--ivory);
+}
 
 .about  {
-    background-color: blanchedalmond;
-    width: 100%;
+    background-color: black;
     height: 90vh;
 }
 
 .about ul  {
     display: flex; 
-    background-color: black;
     justify-content: space-around;
     height: 600px;
     align-items: center;
 }
 
 .about li {
-    background-color: ivory;
     height: 400px;
-    width: 400px;
+    flex-direction: column;
 }
 
 .about li:first-child {
-    padding: 10px 0 0 10px;
-    height: 350px;
-    width: 310px;
+  padding: 10px;
+  background-color: white;
+  margin-left: 70px;
 }
 
 .text {
     padding-top: 8px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.bio {
+  width: 80%;
+  margin: 50px 0 0 80px;
+  color: var(--ivory);
+  font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+
+
+  .about li:first-child  {
+    display: none;
+  }
+  
+  img {
+    display: none;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-left: 40px;
+  }
+  .bio {
+    margin: 40px;
+    font-size: 1.2rem;
+  }
+  .text {
+    display: none;
+  }
+ 
+  .container {
+    text-align: center;
+  }
+
+  .container-nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    padding: 0%;
+  }
 }

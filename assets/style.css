@@ -1,381 +1,85 @@
-/* VARIABLES CREATED FOR WEB THEME */
-:root {
-  --malbec:#351f39;
-  --jacaranda:#726a95;
-  --bolivia:#709FB0;
-  --azul-verde:#A0c1B8;
-  --ivory: #f4e8c1;
-}
-
-/* STYLING THE ENTIRE CONTENT OF HTML */
 * {
-    margin: 0%;
-    padding: 0%;
-    border: none;
-}
-
-/* STYLING EVERYTHING INSIDE BODY */
-body {
-  background-color: black;
-  font-family: "VT323", monospace;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.5;
+  color: white;
 }
 
-/* CLEARING UP BULLET POINTS AND UNDERLINES */
-a, li {
-    list-style: none;
-    text-decoration: none;
-}
-/* STYLING FOR MACRO ENDS ------------------------------------*/
-
-
-/* -------------------------------------------------------------NAVIGATION------------------------------------------------------------------ */
-
-
-/* STYLING FOR MICRO BEGINS ----------------------------------*/
-
-/* NAVIGATION */
 h1 {
-    margin-left: -50px;
-    font-weight: 800px;
-    font-family: "Caveat", cursive;
-    font-size: 4rem;
-    color: var(--ivory); 
-  }
-  
-nav a {
-    font-size: 1.5rem;
-    color: var(--ivory);
-    text-transform: uppercase;
-  }
-  
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-.container-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-header {
-    width: 100%;
-    background-color: var(--malbec);
-    padding: 0.8em 0;
-    box-shadow: 0px 10px 60px gray;
-  }
-  
- nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
+  font-size: 100px;
+  font-family: 'Abril Fatface', cursive;
+}
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
-  
-nav li {
-    padding-left: 4em;
-  }
-  
-nav a {
-    text-decoration: none;
-  }
-  
-nav a:hover, nav a:focus {
-    color: yellow
-
-  }
-/* END NAVIGATION -----------------------------------*/
-
-/* ---------------------------------------------------------------ABOUT ME------------------------------------------------------------------ */
-
-/* ABOUT ME -----------------------------------------*/
 h2 {
-    margin:-60px 0 0 60px;
-    font-size: 6vw;
-    color: var(--ivory);
+  font-size: 80px;
+  font-family: 'Abril Fatface', cursive;
 }
 
-.about  {
-    background-image: black;
-    background-size: cover;
-    height: 620px;
-}
-
-.about ul  {
-    display: flex; 
-    justify-content: space-around;
-    height: 600px;
-    align-items: center;
-}
-
-.about li {
-    height: 400px;
-    flex-direction: column;
-}
-
-.about li:first-child {
-    height: 25vw;
-    width: 100vw;
-    padding: 1vw;
-    background-color: white;
-    margin-left: 60px;
-}
-.text {
-
-    font-size: 1vw;
-    padding-top: 1vw;
-    text-align: center;
-    text-transform: uppercase;
-}
-.bio {
-    width: 90%;
-    margin: 0px 0 0 60px;
-    color: var(--ivory);
-    font-size: 2.5vw;
-}
-
-.about img {
-    width: 20vw;
-    height: 20vw;
-}
-
-.about img:hover {
-    opacity: 70%;
-    transition: all 400ms ease-out;
-    cursor: pointer;
-}
-/* END ABOUT ME ------------------------------------------*/
-
-/* ------------------------------------------------------------------WORK------------------------------------------------------------------- */
-
-/* WORK SECTION ------------------------------------------*/
 h3 {
-    margin:-60px 0 0 60px;
-    font-size: 6vw;
-    color: var(--ivory);
+  color: black;
+  font-size: 35px;
+  font-family: 'Abril Fatface', cursive;
 }
 
-.work  {
-    background-image: linear-gradient(var(--jacaranda), var(--azul-verde));
-    background-size: cover;
-    height: 670px;
+.card p {
+  color: black;
 }
 
-.work ul  {
-    display: flex; 
-    justify-content: space-around;
-    height: 600px;
-    align-items: center;
+a {
+  color: ivory;
 }
 
-.work li {
-    height: 400px;
-    flex-direction: column;
+hr {
+  background-color: white;
 }
 
-.work li:first-child {
-    height: 33vw;
-    width: 100vw;
-    padding: 1vw;
-    background-color: white;
-    margin-left: 60px;
-}
-.work .text {
-
-    font-size: 1vw;
-    padding-top: 1vw;
-    text-align: center;
-    text-transform: uppercase;
-}
-.work .bio {
-    width: 90%;
-    margin: 0px 0 0 60px;
-    color: var(--ivory);
-    font-size: 2.5vw;
+.logo {
+  font-size: 35px;
+  margin: 10px;
 }
 
-.work img {
-    width: 30vw;
-    height: 30vw;
-
-}
-.work img:hover {
-    opacity: 80%;
-    transition: all 400ms ease-out;
-    cursor: pointer;
+header {
+  width: 100vw;
+  position: sticky;
+  z-index: 100;
+  top: 0%;
+  left: 0%;
 }
 
-/* WORK SLIDER --------------------------------------------------------------------SLIDER----------------------------------------------------*/
-.work-slider {
-    background-image: linear-gradient(var(--malbec), var(--jacaranda));
-    margin-top: 1px;
+.navbar {
+  background-color: black;
+  opacity: 50%;
+}
+.nav {
+  font-size: 25px;
+  margin-left: auto;
 }
 
-.work-slider li img {
-    background-color: ivory;
-    padding: 10px;
-    width: 280px;
-    height: 280px;
+.nav li {
+  margin: 30px;
 }
 
-.work-slider ul{
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.bio {
+  font-size: 30px;
 }
 
-.work-slider li {
-    margin: 80px;
-  
+.about {
+  margin-top: 60px;
 }
 
-.work-slider img:hover {
-    opacity: 80%;
-    width: 300px;
-    height: 300px;
-    transition: all 400ms ease-out;
-    cursor: pointer;
+.about-me {
+  margin: 40px;
 }
-/* END WORK--------------------------------------- */
 
-/* -------------------------------------------------------------------FOOTER---------------------------------------------------------------- */
+#author {
+  width: 100%;
+}
 
-/* FOOTER ---------------------------------------- */
 footer {
-    display: flex;
-    height: 130px;
-    width: 90%;
-    justify-content: space-around;
-}
-
-
-footer p {
-    padding-top: 60px;
-    color: var(--ivory);
-    font-size: 1vw;
-    text-align: center;
-}
-
-footer #github {
-    margin: 25px 0 0 -90px ;
-    width: 1vw;
-
-}
-
-footer #linkedin {
-    margin: 40px -130px 0 0px;
-}
-/* END FOOTER---------------------------------------------- */
-
-/* ----------------------------------------------------------------------MEDIA SCREENS------------------------------------------------------ */
-
-/* MEDIA SCREENS ------------------------------------------------992 PX--------------------------------------------------------------------- */
-
-@media screen and (max-width: 992px) {
-  .about li:first-child {
-    display: none;
-  }
-
-  .work li:first-child {
-    display: none;
-  }
-
-  footer p {
-    display: none;
-  }
-
-.work-slider p {
-    display: none;
-  }
-}
-
-
-/* -------------------------------------------------------------640 PX---------------------------------------------------------------------- */
-@media screen and (max-width: 640px) {
-  h2, h3 {
-    margin-left:170px;
-  }
-
-  h3 {
-    margin-top: -60px;
-    margin-left: 200px;
-  }
-
-  .bio {
-    width: 80%;
-    padding: 0%;
-    margin:30px 0 0 40px;
-    text-align: center;
-  }
-
-  .work .bio {
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-
-  .about li:first-child  {
-    display: block;
-    position:absolute;
-    width: 200px;
-    height: 200px;
-    top: 540px;
-    left: 75px;
-  }
-
-  .work li:first-child  {
-    display: block;
-    position:absolute;
-    width: 200px;
-    height: 200px;
-    top: 1150px;
-    left: 75px;
-  }
-
-  .work img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .about img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .text {
-    display: none;
-  }
   
-  .container {
-    text-align: center;
-  }
+  background-color: black;
+}
 
-  .container-nav {
-    flex-direction: column;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    padding: 0%;
-  }
-
-  footer #github {
-  margin: 15px 0 0 -290px ;
-  width: 1vw;
-  }
-
-  footer #linkedin {
-  margin: 40px -130px 0 0px;
-  }
+footer ul {
+  display: flex;
+  justify-content: space-between;
 }

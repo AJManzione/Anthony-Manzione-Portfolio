@@ -37,6 +37,12 @@ h6 {
   font-family: 'Abril Fatface', cursive;
 }
 
+h7 {
+  color: gold;
+  font-size: 40px;
+  font-family: 'Abril Fatface', cursive;
+}
+
 .project-one-click a:hover {
   opacity: 50%;
   transition: .5s;
@@ -113,9 +119,15 @@ header {
 #author {
   width: 100%;
 }
-
+.card {
+  background-color: rgb(200, 184, 93);
+}
 .card p {
   color: black;
+}
+
+.card-body {
+  background-color: rgb(232, 215, 121);
 }
 
 #techUsed ul {

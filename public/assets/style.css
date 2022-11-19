@@ -1,7 +1,9 @@
 * {
+  color: white;
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5;
-  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -20,21 +22,40 @@ h3 {
   font-family: 'Abril Fatface', cursive;
 }
 
-.card p {
-  color: black;
+h4 {
+  font-size: 35px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+h5 {
+  font-size: 30px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+h6 {
+  font-size: 24px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.project-one-click a:hover {
+  opacity: 50%;
+  transition: .5s;
+}
+
+.button h4:hover {
+  color: gold;
+  font-size: 40px;
+  text-decoration: none;
+  transition: .5s;
 }
 
 a {
-  color: ivory;
+  text-decoration: none;
+  color: mediumspringgreen;
 }
 
 hr {
-  background-color: white;
-}
-
-.logo {
-  font-size: 35px;
-  margin: 10px;
+  background-color: gold;
 }
 
 header {
@@ -46,9 +67,9 @@ header {
 }
 
 .navbar {
-  background-color: black;
-  opacity: 50%;
+  background: rgba(0, 0, 0, .4)
 }
+
 .nav {
   font-size: 25px;
   margin-left: auto;
@@ -58,8 +79,27 @@ header {
   margin: 30px;
 }
 
+.nav a {
+  color: gold;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: white;
+  transition: .33s;
+}
+
+.logo {
+  font-size: 35px;
+  margin: 10px;
+}
+
 .bio {
   font-size: 30px;
+}
+
+.bio-small {
+  font-size: 24px;
 }
 
 .about {
@@ -74,12 +114,24 @@ header {
   width: 100%;
 }
 
-footer {
-  
-  background-color: black;
+.card p {
+  color: black;
 }
 
-footer ul {
-  display: flex;
-  justify-content: space-between;
+#techUsed ul {
+  list-style: circle;
 }
+
+#techUsed ul li {
+  padding: 10px;
+}
+
+.example-code {
+  max-width: 750px;
+  overflow: hidden;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+

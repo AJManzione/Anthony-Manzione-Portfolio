@@ -24,6 +24,12 @@ app.get('/work', (req, res) => {
 app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/contact.html'));
 })
+app.get('/Mickey-N-Friends-Finder', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/portfolio/project-one.html'))
+})
+app.get('/Wish-List', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/portfolio/project-two.html'))
+})
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });

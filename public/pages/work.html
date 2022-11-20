@@ -109,7 +109,7 @@ background-size: cover;
 
   <br><br><br>
 
-  <div class="row">
+  <div class="row m-5">
     <div class="col">
       <hr class="w-75">
       <h1 class="text-center">Command Line Apps</h1>
@@ -122,72 +122,80 @@ background-size: cover;
 
 
 
-
-  <div class="container project-one-click">
-    <div class="row">
+  <div class="container">
+    <div class="row d-flex flex-row">
       <div class="col-lg-6">
         <div class="card">
           <div class="card-header">
-            <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
-              <h3 class="text-center">Team Profile Generator</h3>
-            </a>
+            <h3 class="text-center">Team Profile Generator</h3>
           </div>
           <div class="card-body">
-            <div class="collapse" id="collapseOne">
-              <div class="card-body">
+            <img class="movies" src="../assets/images/movies/TEAM-PROFILE-WT.gif" alt="">
+            <div class="row d-flex align-items-sm-center justify-content-center mt-2">
+              <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                <p>- About this project -</p>
+              </a>
+              <div class="collapse m-2 text-center" id="collapseOne">
+                <hr>
                 <p>The team profile generator is a CLI application that uses the inquirer npm package to prompt the user with questions in the node terminal. Based on these questions the user can build a team of employees and when done an html page will be generated with the team they selected. The user also has the option to select a color theme for their page </p>
-                <a target="_blank" href="https://github.com/AJManzione/Team-Profile-Generator">
-                  <p>Link to GitHub
-                    <span>
-                      <img width="25px"src="../assets/images/GitHub-Mark-120px-plus.png" alt="">
-                    </span>
-                  </p>
-                </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=P6LUVCYvg_4&t=20s">
-                  <p>Link to Video Walkthrough
-                    <span>
-                      <img width="60px"src="../assets/images/youtube-logo-png-2069.png" alt="">
-                    </span>
-                  </p>
-                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-header">
-            <a data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-              <h3 class="text-center">README.md Generator</h3>
+          <div class="card-footer d-flex flex-row justify-content-between align-items-sm-center">
+            <a target="_blank" href="https://github.com/AJManzione/Team-Profile-Generator">
+              <p>Link to GitHub
+                <span>
+                  <img width="25px"src="../assets/images/icons/Github-Logos/GitHub-Mark-120px-plus.png" alt="">
+                </span>
+              </p>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=P6LUVCYvg_4&t=20s">
+              <p>Link to Video Walkthrough
+                <span>
+                  <img width="70px"src="../assets/images/icons/youtube-logo-png-2069.png" alt="">
+                </span>
+              </p>
             </a>
           </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">README.md Generator</h3>
+          </div>
           <div class="card-body">
-            <div class="collapse" id="collapseTwo">
-              <div class="card-body">
+            <img id="readme-gif" class="movies" src="../assets/images/movies/README-generator-WT.gif" alt="">
+            <div class="row d-flex align-items-sm-center justify-content-center mt-2">
+              <a data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                <p>- About this project -</p>
+              </a>
+              <div class="collapse m-2 text-center" id="collapseTwo">
+                <hr>
                 <p>The README.md Generator is a CLI aplication that utilizes the inquirer npm package to prompt the user with a series of questions in the node terminal. The user is asked to input information on a project that they are working on such as title, description, license type and so much more. Based on the answers given a README markdown file will be created so that the user has a great starting point for a README file in their next repository.</p>
-                <a target="_blank" href="https://github.com/AJManzione/generator-README">
-                  <p>Link to GitHub
-                    <span>
-                      <img width="25px"src="../assets/images/GitHub-Mark-120px-plus.png" alt="">
-                    </span>
-                  </p>
-                </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=KFUMAhR1H-Q">
-                  <p>Link to Video Walkthrough
-                    <span>
-                      <img width="60px"src="../assets/images/youtube-logo-png-2069.png" alt="">
-                    </span>
-                  </p>
-                </a>
               </div>
             </div>
           </div>
+          <div class="card-footer d-flex flex-row justify-content-between align-items-sm-center">
+            <a target="_blank" href="https://github.com/AJManzione/generator-README">
+              <p>Link to GitHub
+                <span>
+                  <img width="25px"src="../assets/images/icons/Github-Logos/GitHub-Mark-120px-plus.png" alt="">
+                </span>
+              </p>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=KFUMAhR1H-Q">
+              <p>Link to Video Walkthrough
+                <span>
+                  <img width="70px"src="../assets/images/icons/youtube-logo-png-2069.png" alt="">
+                </span>
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
-
 
   <br><br><br>
 
@@ -196,7 +204,7 @@ background-size: cover;
 
 
 
-
+<script src="../javascript/script.js"></script>
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>

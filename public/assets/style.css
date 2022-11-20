@@ -48,10 +48,6 @@ h8 {
   font-size: 24px;
 }
 
-.project-one-click a:hover {
-  opacity: 50%;
-  transition: .5s;
-}
 
 .button h4:hover {
   color: gold;
@@ -63,6 +59,12 @@ h8 {
 a {
   text-decoration: none;
   color: mediumspringgreen;
+}
+
+.a {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 hr {
@@ -122,9 +124,10 @@ header {
   font-size: 24px;
 }
 
-.about {
-  margin-top: 40px;
+.tiny-text {
+  font-size: 14px;
 }
+
 
 #author {
   width: 100%;

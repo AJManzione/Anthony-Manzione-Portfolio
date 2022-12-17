@@ -7,7 +7,7 @@
     <title>Anthony Manzione Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/style.css">
@@ -19,10 +19,13 @@
     
 <!-- NAVIGATION MENU -->
 
-<main style=
-"background-image:url('/assets/images/background.jpeg');
-background-size: cover;
-">
+
+<main 
+  class="fixed-bg"
+  style=
+  "background-image:url('/assets/images/background.jpeg');
+  background-size: cover;">
+
 
 
 <header>
@@ -46,8 +49,6 @@ background-size: cover;
 <!-- ABOUT ME  -->
 
 <br>
-
-
 
   <div class="row">
     <div class="col">
@@ -73,7 +74,7 @@ background-size: cover;
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <div class="card">
           <div class="card-header">
             <h3 class="text-center">Mickey-n-Friends-Finder</h3>
@@ -90,10 +91,11 @@ background-size: cover;
         </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <div class="card">
           <div class="card-header">
-            <h3 class="text-center">Wish List</h3>
+            <h3 class="text-center p-2">Wish List</h3>
+            <br>
           </div>
           <div class="card-body">
             <img class="movies" src="../assets/images/movies/Wish-List-WT.gif" height="273px"alt="placeholder image for the first portfolio piece">
@@ -106,21 +108,79 @@ background-size: cover;
           </div>
         </div>
       </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center p-2">Pokedex Tracker</h3>
+            <br>
+          </div>
+          <div class="card-body">
+            <img class="movies" src="../assets/images/movies/Pokedex-Tracker-WT.gif" height="273px"alt="placeholder image for the first portfolio piece">
+            <a href="/Pokedex-Tracker">
+              <p class="text-center pt-3">- About this project -</p>
+            </a>
+          </div>
+          <div class="card-footer">
+            <p class="text-center">This is a full stack application to create an account, and create and customize wish-lists!</p>
+          </div>
+        </div>
+      </div>
     </div> 
   </div> 
 
-  </main>
-  <main style=
-"background-image:url('/assets/images/background-upsidedown.jpeg');
-background-size: cover;
-">
-  <br><br><br>
+  <div class="mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="text-center">React Portfolio</h3>
+            </div>
+            <div class="card-body">
+              <img class="movies" src="../assets/images/examples/react-portfolio.png" alt="">
+              <div class="row d-flex align-items-sm-center justify-content-center mt-2">
+                <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                  <p>- About this project -</p>
+                </a>
+                <div class="collapse m-2 text-center" id="collapseOne">
+                  <hr>
+                  <p>The react portfolio app was intended to be a similar portfolio page to the one that you are interacting with now however created using react only. This project was my first time using react and the technology quickly became mmy favorite. The website was built within a few hours. </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer d-flex flex-row justify-content-between align-items-sm-center">
+              <a target="_blank" href="https://github.com/AJManzione/React-Portfolio">
+                <p>Link to GitHub
+                  <span>
+                    <img width="25px"src="../assets/images/icons/Github-Logos/GitHub-Mark-120px-plus.png" alt="">
+                  </span>
+                </p>
+              </a>
+              <a target="_blank" href="https://ajmanzione.github.io/React-Portfolio/#about">
+                <p>Deployed
+                  <span>
+                    <img width="40px"src="../assets/images/icons/link-icon.png" alt="">
+                  </span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="row">
-    <div class="col">
-      <hr class="w-75">
-      <h1 class="text-center">Command Line Apps</h1>
-      <hr class="w-75">
+
+
+  <br><br><br>
+  <div class="divider-bg">
+    <div class="row">
+      <div class="col">
+        <hr class="w-75">
+        <h1 class="text-center">Command Line Apps</h1>
+        <hr class="w-75">
+      </div>
     </div>
   </div>
 </div>
@@ -205,8 +265,6 @@ background-size: cover;
 <br><br><br>
 
 </main>
-
-
 
 <script src="../javascript/script.js"></script>
 

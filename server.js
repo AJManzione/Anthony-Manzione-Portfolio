@@ -30,6 +30,9 @@ app.get('/Mickey-N-Friends-Finder', (req, res) => {
 app.get('/Wish-List', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/pages/portfolio/project-two.html'))
 })
+app.get('/Pokedex-Tracker', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/pages/portfolio/project-three.html'))
+})
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/pages/index.html'));
 });

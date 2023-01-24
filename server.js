@@ -21,6 +21,9 @@ app.get('/about', (req, res) => {
 app.get('/work', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/pages/work.html'));
 })
+app.get('/resume', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/pages/resume.html'));
+})
 app.get('/blog', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/pages/blog.html'));
 })

@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: black;
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5;
   text-decoration: none;
@@ -64,7 +64,7 @@ h8 {
 
 a {
   text-decoration: none;
-  color: mediumspringgreen;
+  color: black;
 }
 
 .a {
@@ -74,7 +74,7 @@ a {
 }
 
 hr {
-  background-color: gold;
+  background-color: black;
 }
 
 header {
@@ -85,33 +85,6 @@ header {
   left: 0%;
 }
 
-.navbar {
-  background: rgba(0, 0, 0, .4)
-}
-
-.nav {
-  font-size: 18px;
-  margin-left: auto;
-}
-
-.nav li {
-  margin: 30px;
-}
-
-.nav a {
-  color: gold;
-}
-
-.nav a:hover {
-  text-decoration: none;
-  color: white;
-  transition: .33s;
-}
-
-.fixed-bg {
-  background-attachment: fixed;
-}
-
 .divider-bg {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
@@ -120,9 +93,9 @@ header {
 
 .logo {
   font-size: 28px;
+  font-weight: 900;
   margin: 10px;
   text-decoration: none;
-  color: mediumspringgreen;
 }
 
 .bio {

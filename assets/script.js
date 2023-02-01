@@ -728,12 +728,12 @@ var SEPARATION = 100,
  
         container = document.createElement('div');
 
-        var crazy = document.getElementById("crazy").appendChild(container);
+        var home = document.getElementById("home").appendChild(container);
         var hTwoOne = document.createElement('h2');
         var span = document.createElement('span');
         var hTwoTwo = document.createElement('h2');
 
-        crazy.appendChild(hTwoOne);
+        home.appendChild(hTwoOne);
         hTwoOne.textContent = "Hello I'm ";
         hTwoOne.setAttribute('id', 'text');
 
@@ -742,7 +742,7 @@ var SEPARATION = 100,
 
         spanEl.textContent = "Anthony Manzione.";
 
-        var hTwoTwoEl = crazy.appendChild(hTwoTwo);
+        var hTwoTwoEl = home.appendChild(hTwoTwo);
         hTwoTwoEl.textContent = "I'm a full-stack web developer.";
         hTwoTwoEl.setAttribute('id', 'textTwo');
 

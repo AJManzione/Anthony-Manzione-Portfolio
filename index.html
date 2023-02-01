@@ -18,7 +18,9 @@
   <nav 
     style="background-color:rgb(15, 15, 36); z-index: 1; border-bottom:rgb(0, 255, 225) solid 4px;"
     class="sticky-navbar pt-3">
-    <ul class="d-flex flex-row justify-content-around">
+    <ul
+      style="padding: 0;" 
+      class="d-flex flex-row justify-content-around">
       <li>
         <a href="#home">HOME</a>
       </li>
@@ -55,18 +57,21 @@
     </div>
   </div>
 
+
+
+
   <div class="container reveal mt-5">
-    <div class="row d-flex justify-content-center align-items-lg-center">
-      <div class="col-lg-4 hex ">
+    <div class="d-flex flex-row justify-content-center align-items-lg-center flex-wrap">
+      <div class="col-lg-4 hex">
         <div class="hex-background">
           <img id="author" src="assets/images/Anthony-Portrait.jpg" />
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="container p-5">
+        <div class="container">
           <p 
             style="letter-spacing:1px;"
-            class="bio-med text-center">What I do</p>
+            class="bio-med text-center pt-5">What I do</p>
         <hr>
         <ul 
           style="list-style: circle; letter-spacing: 2px;">
@@ -115,7 +120,9 @@
   <div class="container reveal">
     <div class="row">
       <br>
-      <div class="d-flex justify-content-center m-4"> 
+      <div 
+        style="padding:0;"
+        class="d-flex justify-content-center mb-4"> 
         <h4 
           style="letter-spacing:2px;"
           class="redbox">Full-Stack</h4>
@@ -138,7 +145,7 @@
       <div class="reveal mt-5">
         <div 
           style="margin-top:10vh;"
-          class="d-flex justify-content-center m-4 "> 
+          class="d-flex justify-content-center mb-4 "> 
         <h4 
           style="letter-spacing:2px;"
           class="redbox">Command-Line-Apps</h4>
@@ -178,17 +185,17 @@
 <br><br><br>
 
 <div class="container reveal">
-  <div class="flex-row d-flex justify-content-around">
+  <div class="flex-row d-flex justify-content-around flex-wrap">
     <div
-      class="col-lg-4 shadow">
+      class="col-lg-4 m-2">
       <a href="https://medium.com/@imanzioneaj/promise-all-promise-race-487c211a1ba7">
-        <img class="blogs" src="assets/images/blogs/blog-1.png" alt="">
+        <img class="blogs shadow" src="assets/images/blogs/blog-1.png" alt="">
       </a>
     </div>
     <div 
-      class="col-lg-4 shadow">
+      class="col-lg-4 m-2">
       <a href="https://medium.com/@imanzioneaj/draggable-js-a-unique-drag-and-drop-library-4de8d9c7c49f">
-        <img class="blogs" src="assets/images/blogs/blog-2.png" alt="">
+        <img class="blogs shadow" src="assets/images/blogs/blog-2.png" alt="">
       </a>
     </div>
   </div>
@@ -261,7 +268,7 @@
       style="background-color:rgb(46, 46, 46); width: 50px; height: 50px;">
       <a target="_blank" href="https://www.linkedin.com/in/dev-anthony-manzione/">
         <img
-          width="30px"
+          width="50vw"
           src="assets//images/Icons/linkedin-logo-png-2048.png" alt="">
       </a>
     </div>
@@ -271,7 +278,7 @@
       style="background-color:rgb(46, 46, 46); width: 50px; height: 50px;">
       <a target="_blank" href="https://github.com/AJManzione?tab=repositories">
         <img
-          width="30px"
+          width="50vw"
           src="assets//images//Icons/Github-Logos/GitHub-Mark-Light-120px-plus.png" alt="">
       </a>
     </div>

@@ -10,6 +10,9 @@
   text-decoration: none;
 }
 
+html,body{
+  overflow-x: hidden;
+}
 
 a:hover {
   color: rgb(255, 0, 136);
@@ -103,8 +106,8 @@ span a {
 }
 
 .big-movies {
-  width: 70vw;
-  height: 70vh;
+  min-width: 100%;
+  max-height: 60vh;
   object-fit: contain;
 }
 .icon:hover {
@@ -136,8 +139,8 @@ span a {
 
 .hex {
   margin: 0 auto;
-  width: 420px;
-  height: 370px; /* width * 0.866 */
+  width: 400px;
+  height: 350px; /* width * 0.866 */
   box-sizing: border-box;
   -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
@@ -267,7 +270,7 @@ span a {
   color:rgb(56, 56, 77); 
   font-size: 2vw; 
   border: 2px solid rgb(255, 0, 136); 
-  padding: 6px 12px 6px 12px; 
+  padding:6px 12px 6px 12px; 
   border-radius: 4px;
 }
 .button:hover {

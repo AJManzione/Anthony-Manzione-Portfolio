@@ -749,6 +749,9 @@ var SEPARATION = 100,
         hTwoOne.setAttribute('class', 'text-center');
         hTwoTwo.setAttribute('class', 'text-center');
 
+        hTwoOne.style.lineHeight = "100%";
+        hTwoTwo.style.lineHeight = "100%";
+
         camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 1, 10000);
         camera.position.z = 1000;
  
@@ -950,20 +953,4 @@ $(document).ready(function() {
   });
 
 
-  function revealSequence() {
-    var revealOne = document.getElementById("revealOne");
-    var revealTwo = document.getElementById("revealTwo");
 
-    function revealItemOne() {
-        revealOne.style.display = "block";
-    }
-
-    function revealItemTwo() {
-        revealTwo.style.display = "block";
-    }
-
-    setTimeout(revealItemOne, 1000);
-    setTimeout(revealItemTwo, 2000);
-  }
-
-  revealSequence();

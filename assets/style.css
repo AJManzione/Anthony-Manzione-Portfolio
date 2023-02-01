@@ -4,7 +4,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  color: rgb(59, 59, 59);
+  color: rgb(56, 56, 77);
   font-family: 'Raleway';
   line-height: 1.5;
   text-decoration: none;
@@ -14,27 +14,21 @@
 a:hover {
   color: rgb(255, 0, 136);
   transition: .635s;
+}
 
+span a:hover {
+  color: #003073;
 }
 
 a {
   text-decoration: none;
   color: white;
-  
+  line-height: 140%;
+  letter-spacing: 3px;
 }
 
-
-.divider-bg {
-  border-top: solid white 1px;
-  border-bottom: solid white 1px;
-  background-color: rgb(17, 99, 54);
-}
-
-.logo {
-  font-size: 28px;
-  font-weight: 900;
-  margin: 10px;
-  text-decoration: none;
+span a {
+  color: rgb(255, 0, 136);
 }
 
 .bio {
@@ -83,16 +77,30 @@ a {
   object-fit: cover;
 }
 
-.big-movies {
-  width:  100%;
-  height: 70vh;
-  object-fit: cover;
+.movies:hover {
+  opacity: .4;
+  transition: .6253s;
 }
 
-.video {
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(200, 184, 93);
+.blogs {
+  width:  100%;
+  height: 35vh;
+  object-fit: contain;
+}
+
+.blogs:hover {
+  opacity: .4;
+  transition: .6253s;
+}
+
+.big-movies {
+  width: 70vw;
+  height: 70vh;
+  object-fit: contain;
+}
+.icon:hover {
+  opacity: .49;
+  transition: .625;
 }
 
 .sticky-navbar {
@@ -234,17 +242,41 @@ a {
 }
 
 .underline {
-  width: 5%;
-  height: .5vh;
-  background-color: #003073;
+  width: 60px;
+  height: 4px;
+  background-color: rgb(59,59,59);
 
 }
 
 .redbox {
-  color: white;
-  background-color: rgb(221, 0, 118);
+  border: 2px solid rgb(221, 0, 118);
   padding: 7px 20px 7px 20px;
   border-radius: 3px;
 }
 
+.button {
+  color:rgb(56, 56, 77); 
+  font-size: 2vw; 
+  border: 2px solid rgb(255, 0, 136); 
+  padding: 6px 12px 6px 12px; 
+  border-radius: 4px;
+}
+.button:hover {
+  transition: .625;
+  opacity: .4;
+  border: 2px solid rgb(0, 0, 0) .4;
+}
+
+.button-light {
+  color:rgb(256, 252, 252); 
+  font-size: 2vw; 
+  border: 2px solid rgb(0, 255, 225); 
+  padding: 6px 12px 6px 12px; 
+  border-radius: 4px;
+}
+.button-light:hover {
+  color:rgb(194, 210, 246); 
+  border: 2px solid rgb(47, 68, 104);; 
+  border-radius: 4px;
+}
 

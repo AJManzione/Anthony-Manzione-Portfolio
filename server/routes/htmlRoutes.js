@@ -1,0 +1,16 @@
+const path = require('path');
+
+module.exports = function (app) {
+  app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+  });
+  app.get('/project-one', function (req, res) {
+    res.sendFile(path.join(__dirname, '../client/dist/project-one.html'));
+  });
+  app.get('/project-two', function (req, res) {
+    res.sendFile(path.join(__dirname, '../client/dist/project-two.html'));
+  });
+  app.get('/project-three', function (req, res) {
+    res.sendFile(path.join(__dirname, '../client/dist/project-three.html'));
+  });
+};

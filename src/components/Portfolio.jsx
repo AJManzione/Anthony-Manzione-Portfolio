@@ -50,7 +50,7 @@ export default function Portfolio() {
             </div>
 
             <div className="col-lg-4" >
-              <Link to="/Anthony-Manzione_Portfolio/mickey-n-friends-finder" title="Click Here To Learn More">
+              <Link to="/Anthony-Manzione-Portfolio/mickey-n-friends-finder" title="Click Here To Learn More">
                 <figure className="effect-portfolio">
                   <div className="movies-container">
                     <div className="movies-overlay"></div>
@@ -85,7 +85,7 @@ export default function Portfolio() {
             </div>
 
             <div className="col-lg-4">
-              <Link to="/Anthony-Manzione_Portfolio/wish-list" title="Click Here To Learn More">
+              <Link to="/Anthony-Manzione-Portfolio/wish-list" title="Click Here To Learn More">
                 <figure className="effect-portfolio">
                   <div className="movies-container">
                     <div className="movies-overlay"></div>
@@ -120,7 +120,7 @@ export default function Portfolio() {
             </div>
 
             <div className="col-lg-4" >
-              <Link to="/Anthony-Manzione_Portfolio/pokedex-tracker" title="Click Here To Learn More">
+              <Link to="/Anthony-Manzione-Portfolio/pokedex-tracker" title="Click Here To Learn More">
                 <figure className="effect-portfolio">
                   <div className="movies-container">
                     <div className="movies-overlay"></div>

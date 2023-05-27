@@ -1,0 +1,44 @@
+#contact {
+  background-color: rgb(46, 46, 58);
+  height: fit-content;
+}
+
+#contact h1 {
+  font-weight:700; 
+  letter-spacing: 1px; 
+  color: rgb(255, 252, 252);
+}
+
+#contact h5 {
+  margin:auto; 
+  background-color: rgb(255, 252, 252);
+}
+
+#contact p {
+  color: rgb(0, 255, 225); 
+  letter-spacing: 2px;
+}
+
+#contact form input {
+  background-color: rgb(63, 63, 81);
+  border: none; 
+  border-radius: 4px;
+  color: rgb(255, 252, 252);
+}
+
+#contact form :nth-child(3) {
+  height:200px;
+}
+
+#contact button {
+  border:2px solid rgb(255, 252, 252); 
+  background: transparent; 
+  padding:7px 25px 7px 25px;
+  color: rgb(255, 252, 252); 
+  letter-spacing: 3px;
+}
+
+#contact button:hover {
+  border:2px solid rgb(255, 0, 136);
+}
+

@@ -1,0 +1,42 @@
+#about {
+  background-color: white; 
+}
+
+#about h1 {
+  font-weight: 700; 
+}
+
+ul {
+  list-style: disc; 
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+p {
+  line-height:180%;
+}
+
+.author {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+#text {
+  padding-top: 10rem;
+  color: white; 
+  font-size:4vw; 
+}
+
+#textTwo {
+  color: white; 
+  font-size:4vw; 
+}
+
+#text span {
+  color: rgb(255, 0, 136);
+  font-weight: 600;
+}
+

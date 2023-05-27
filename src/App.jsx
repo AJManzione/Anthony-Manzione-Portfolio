@@ -12,10 +12,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path = "/portfolio_anthony_manzione/" element={<HomePage/>}></Route>
-        <Route exact path = "/portfolio_anthony_manzione/mickey-n-friends-finder/" element={<Project1/>}></Route>
-        <Route exact path = "/portfolio_anthony_manzione/wish-list/" element={<Project2/>}></Route>
-        <Route exact path = "/portfolio_anthony_manzione/pokedex-tracker/" element={<Project3/>}></Route>
+        <Route exact path = "/Anthony-Manzione_Portfolio/" element={<HomePage/>}></Route>
+        <Route exact path = "/Anthony-Manzione_Portfolio/mickey-n-friends-finder/" element={<Project1/>}></Route>
+        <Route exact path = "/Anthony-Manzione_Portfolio/wish-list/" element={<Project2/>}></Route>
+        <Route exact path = "/Anthony-Manzione_Portfolio/pokedex-tracker/" element={<Project3/>}></Route>
       </Routes>
     </Router>
   )

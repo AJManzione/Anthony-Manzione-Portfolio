@@ -16,8 +16,8 @@ function Footer() {
   }
 
   return (
-    <div id="footer" className='d-flex justify-content-around align-items-center '>
-      <div>
+    <div id="footer" className='d-flex justify-content-around align-items-center p-3 '>
+      <div className='p-0 m-0'>
         <a target='__blank' href="https://github.com/AJManzione">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="5vw" height="50" viewBox="0,0,256,256"
             style={{fill:"#000000"}}>
@@ -37,8 +37,8 @@ function Footer() {
           </svg>
         </a>
       </div>
-          <h6>Anthony Manzione <span>© 2023</span></h6>
-          <ul className='m-3'>
+          <h6 className='p-0 m-0'>Anthony Manzione <span>© 2023</span></h6>
+          <ul className='d-flex flex-column justify-content-center m-0 p-0'>
             <li>
               <a href="/Anthony-Manzione-Portfolio/">HOME</a>
             </li>

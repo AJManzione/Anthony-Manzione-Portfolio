@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+#root {
+  height: 100dvh;
+  width: 100dvw;
+}
+
 .title {
   font-weight: 700;
   letter-spacing: 1px;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AdvancedImage, lazyload } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/base';
 import { useAnimationOnScroll } from './Animations';
@@ -19,7 +19,7 @@ export default function AboutPage() {
   const refSlideInLeft = useAnimationOnScroll('slideInLeft');
   const [loaded, setLoaded] = useState(false);
 
-  document.getElementById('three-animation').style.display = 'block'
+  document.getElementById('three-animation').style.display = 'block';
 
   const handleLoad = () => {
     setLoaded(true);

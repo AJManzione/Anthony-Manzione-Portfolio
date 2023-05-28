@@ -33,13 +33,13 @@ function Project2() {
               <AdvancedImage
                 alt='A Placeholder image showing the second project in the portfolio'
                 className='big-movies'
-                cldImg={cld.image('wish-list_wh7ayn')} 
+                cldImg={cld.image('vkudsbctowkp0kgc179x')} 
                 plugins={[lazyload()]}
               /> 
             ) : (
               <AdvancedImage
                 className='big-movies'
-                cldImg={cld.image('wish-list-lowest_vkla1z')} 
+                cldImg={cld.image('wish-list_wh7ayn')} 
                 plugins={[lazyload()]}
                 onLoad={handleLoad}
               /> 

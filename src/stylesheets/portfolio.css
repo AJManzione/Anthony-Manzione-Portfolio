@@ -149,8 +149,8 @@
 
 .big-movies {
   border: rgb(0, 255, 225) solid 4px;
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
   position: relative;
   margin: auto;

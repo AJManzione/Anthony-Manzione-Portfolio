@@ -58,7 +58,7 @@ export default function Portfolio() {
                         <AdvancedImage
                           alt='A Placeholder image showing the first project in the portfolio'
                           className='movies'
-                          cldImg={cld.image('mickey-n-friends-finder_dfohvs')} 
+                          cldImg={cld.image('mickey-n-friends-finder_fj7lto')} 
                           plugins={[lazyload()]}
                         /> 
                       ) : (
@@ -93,7 +93,7 @@ export default function Portfolio() {
                         <AdvancedImage
                           alt='A Placeholder image showing the second project in the portfolio'
                           className='movies'
-                          cldImg={cld.image('wish-list_wh7ayn')} 
+                          cldImg={cld.image('vkudsbctowkp0kgc179x')} 
                           plugins={[lazyload()]}
                         /> 
                       ) : (
@@ -128,7 +128,7 @@ export default function Portfolio() {
                         <AdvancedImage
                           alt='A Placeholder image showing the third project in the portfolio'
                           className='movies'
-                          cldImg={cld.image('pokedex-tracker_ml9e8l')} 
+                          cldImg={cld.image('pokedex-tracker_fltsci')} 
                           plugins={[lazyload()]}
                         /> 
                       ) : (

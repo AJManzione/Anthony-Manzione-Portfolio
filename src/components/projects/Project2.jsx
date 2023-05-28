@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { AdvancedImage, lazyload } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/base';
-import Navbar from '../Navbar'
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 
 const cld = new Cloudinary({
@@ -72,6 +73,7 @@ function Project2() {
         </ul>
       </div>
     </div>
+    <Footer/>
   </div>
   )
 }

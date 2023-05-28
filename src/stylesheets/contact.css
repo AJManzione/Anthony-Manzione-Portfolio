@@ -28,7 +28,7 @@
 
 #contact span {
   color: rgb(155, 125, 141);
-  font-size: 13px;
+  font-size: px;
 }
 
 #contact form :nth-child(3) {
@@ -45,5 +45,6 @@
 
 #contact button:hover {
   border:2px solid rgb(255, 0, 136);
+  transition: .2s ease;
 }
 

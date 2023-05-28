@@ -16,6 +16,38 @@
   height: fit-content;
 }
 
+#footer {
+  background-color: rgb(33, 33, 42);
+  height: fit-content
+}
+
+#footer h6 {
+  color:rgb(255, 255, 255, 0.66);
+}
+
+#footer span {
+  color:rgb(255, 255, 255, 0.33);
+}
+
+#footer svg {
+  height: 100%;
+}
+
+#footer li, a {
+  list-style: none;
+  color: #ffffffaa;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color:rgb(0, 255, 225);
+}
+
+#footer a:hover g{
+  fill:rgb(0, 255, 225);
+  transition: .4s ease-in-out;
+}
+
 .movies {
   width: 100%;
   height: 35vh;
@@ -113,7 +145,6 @@
   background-image: linear-gradient(135deg, rgba(0,38,73,1), rgba(0,13,54,1) 100%);
   overflow: hidden;
   height: fit-content;
-
 }
 
 .big-movies {

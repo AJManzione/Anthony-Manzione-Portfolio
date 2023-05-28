@@ -38,14 +38,14 @@ export default function AboutPage() {
             <div className='author-image-container'>
               {loaded ? (
                 <AdvancedImage
-                  cldImg={cld.image('profile-pic-highest_uwkqnn')}
+                  cldImg={cld.image('profile-pic-highest_u3obmj')}
                   plugins={[lazyload()]}
                   alt=""
                   className='author' 
                 />
               ) : (
                 <AdvancedImage
-                  cldImg={cld.image('profile-pic-lowest_qsnwew')}
+                  cldImg={cld.image("profile-pic-lowest_mb1z29")}
                   alt=""
                   className="author"
                   onLoad={handleLoad}
@@ -56,8 +56,10 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="container">
-              <h2 className="text-center pt-5">What I do</h2>
+            <div className="container mt-3">
+              <p className="bio-shmed pt-5">
+                Hi, my name is Anthony and I am a full stack web developer. I have a passion for building applications and solving problems using the latest technologies and best practices. When I'm not coding, you can find me rock climbing or enjoying the great outdoors.
+              </p>
               <hr/>
               <ul>
                 <li>Full Stack Web Development</li>
@@ -68,10 +70,6 @@ export default function AboutPage() {
                 <br/>
                 <li>Software Development</li>
               </ul>
-              <hr/>
-              <p className="bio-shmed pt-3">
-                Hi, my name is Anthony and I am a full stack web developer. I have a passion for building applications and solving problems using the latest technologies and best practices. When I'm not coding, you can find me rock climbing or enjoying the great outdoors.
-              </p>
               <br/>
             </div>
           </div>

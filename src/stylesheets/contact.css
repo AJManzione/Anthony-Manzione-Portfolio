@@ -19,11 +19,16 @@
   letter-spacing: 2px;
 }
 
-#contact form input {
+#contact form input, textarea {
   background-color: rgb(63, 63, 81);
   border: none; 
   border-radius: 4px;
   color: rgb(255, 252, 252);
+}
+
+#contact span {
+  color: rgb(155, 125, 141);
+  font-size: 13px;
 }
 
 #contact form :nth-child(3) {

@@ -16,6 +16,7 @@ function App() {
         <Route exact path = "/Anthony-Manzione-Portfolio/mickey-n-friends-finder/" element={<Project1/>}></Route>
         <Route exact path = "/Anthony-Manzione-Portfolio/wish-list/" element={<Project2/>}></Route>
         <Route exact path = "/Anthony-Manzione-Portfolio/pokedex-tracker/" element={<Project3/>}></Route>
+        <Route exact path = "*" element={<HomePage/>}></Route>
       </Routes>
     </Router>
   )

@@ -25,7 +25,7 @@ function Project2() {
   };
 
   return (
-    <div id='aboutMNFF' className='d-flex flex-column justify-content-center'>
+    <div id='wish-list' className='d-flex flex-column justify-content-center'>
       <Navbar/>
       <div className='big-movies-container'>
         <div className="d-flex flex-column justify-content-center align-items-lg-center mt-5">
@@ -46,7 +46,7 @@ function Project2() {
             )} 
       </div>
       <div className='learn-more-nav d-flex flex-row justify-content-center w-100 mt-5 mb-5'>
-        <ul className="d-flex flex-row justify-content-between mb-5 mt-5 w-75">
+        <ul className="d-flex flex-row justify-content-around mb-5 mt-5 w-100 p-0">
           <li>
             <a 
               href="https://wish-list-maker.herokuapp.com/"

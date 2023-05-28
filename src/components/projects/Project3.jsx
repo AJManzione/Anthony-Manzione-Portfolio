@@ -45,34 +45,34 @@ function Project3() {
             /> 
           )}
         </div>
-      <div className='learn-more-nav d-flex flex-row justify-content-center w-100 mt-5 mb-5'>
-        <ul className="d-flex flex-row justify-content-between mb-5 mt-5 w-75">
-          <li>
-            <a 
-              href="https://pokemon-app.herokuapp.com/"
-              target="_blank"
-              className="redbox">
-              VISIT SITE
-            </a>
-          </li>
-          <li>
-            <a 
-              href="https://github.com/AJManzione/Pokemon-Trading-Center"
-              target="_blank"
-              className="redbox">
-              GITHUB
-            </a>
-          </li>
-          <li>
-            <a 
-              href=""
-              className="redbox">
-              LEARN MORE  
-            </a>
-          </li>
-        </ul>
+        <div className='learn-more-nav d-flex flex-row justify-content-center w-100 mt-5 mb-5'>
+          <ul className="d-flex flex-row justify-content-around mb-5 mt-5 w-100 p-0">
+            <li>
+              <a 
+                href="https://pokemon-app.herokuapp.com/"
+                target="_blank"
+                className="redbox">
+                VISIT SITE
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://github.com/AJManzione/Pokemon-Trading-Center"
+                target="_blank"
+                className="redbox">
+                GITHUB
+              </a>
+            </li>
+            <li>
+              <a 
+                href=""
+                className="redbox">
+                LEARN MORE  
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     <Footer/>
   </div>
   )

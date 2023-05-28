@@ -4,7 +4,7 @@
   padding-bottom: 20vh;
 }
 
-#portfolio h1 {
+#portfolio h1, #about-wish-list h1{
   font-weight: 700; 
 }
 
@@ -16,9 +16,17 @@
   height: fit-content;
 }
 
+#about-wish-list {
+  background-color:#ffffff;
+  height: 100vh;
+}
+
+#about-wish-list p{
+  font-size: 1.3rem;
+}
+
 #footer {
   background-color: rgb(33, 33, 42);
-  height: fit-content
 }
 
 #footer h6 {
@@ -34,6 +42,7 @@
 }
 
 #footer li, a {
+  font-size: 2vmin;
   list-style: none;
   color: #ffffffaa;
   text-decoration: none;
@@ -144,13 +153,12 @@
   background-image: -o-linear-gradient(45deg,rgba(0,38,73,1),rgba(0,13,54,1) 100%);
   background-image: linear-gradient(135deg, rgba(0,38,73,1), rgba(0,13,54,1) 100%);
   overflow: hidden;
-  height: fit-content;
+  height: 92vh;
 }
 
 .big-movies {
   border: rgb(0, 255, 225) solid 4px;
-  width: 50%;
-  height: 50%;
+  width: 60%;
   object-fit: cover;
   position: relative;
   margin: auto;
@@ -164,6 +172,7 @@
 }
 
 .learn-more-nav a {
+  font-size: 2.4vmin;
   text-decoration: none;
   color: white;
 }

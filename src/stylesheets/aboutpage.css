@@ -24,6 +24,13 @@ p {
   position: relative;
 }
 
+.underline-two {
+  width: 60px;
+  height: 4px;
+  background-color: white;
+  margin: auto;
+}
+
 #text {
   padding-top: 10rem;
   color: white; 
@@ -40,3 +47,33 @@ p {
   font-weight: 600;
 }
 
+#about-me-more li {
+  list-style: none; 
+  height: 4vh;
+  font-size: 1.2rem;
+}
+#about-me-more li:hover {
+  color: rgb(255, 0, 136);
+}
+
+#about-me-more-image-container {
+  max-width: 600px;
+}
+
+#about-me-more-two {
+  height: 100vh;
+  background-color: rgb(46, 46, 58);
+}
+
+#about-me-more-two h1, .redbox, .redbox:hover {
+  color: white;
+}
+
+#about-me-more-two, li {
+  color:rgb(255, 255, 255, 0.66);
+}
+
+#skills-box {
+  border: white solid 1px;
+  margin: auto auto;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import HomePage from './components/HomePage';
+import AboutPageMore from './components/AboutPageMore';
 import Project1 from './components/projects/Project1';
 import Project2 from './components/projects/Project2';
 import Project3 from './components/projects/Project3';
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path = "/Anthony-Manzione-Portfolio/" element={<HomePage/>}></Route>
+        <Route exact path = "/Anthony-Manzione-Portfolio/about-me" element={<AboutPageMore/>}></Route>
         <Route exact path = "/Anthony-Manzione-Portfolio/mickey-n-friends-finder/" element={<Project1/>}></Route>
         <Route exact path = "/Anthony-Manzione-Portfolio/wish-list/" element={<Project2/>}></Route>
         <Route exact path = "/Anthony-Manzione-Portfolio/pokedex-tracker/" element={<Project3/>}></Route>

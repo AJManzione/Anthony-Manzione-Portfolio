@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AdvancedImage, lazyload } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/base';
 import { useAnimationOnScroll } from './Animations';
@@ -17,6 +18,7 @@ const cld = new Cloudinary({
 export default function AboutPage() {
   const refSlideInRight = useAnimationOnScroll('slideInRight');
   const refSlideInLeft = useAnimationOnScroll('slideInLeft');
+  const refSlideInLeft2 = useAnimationOnScroll('slideInLeft');
   const [loaded, setLoaded] = useState(false);
 
   document.getElementById('three-animation').style.display = 'block';
@@ -35,10 +37,10 @@ export default function AboutPage() {
       <div className='container'>
         <div className="d-flex flex-row justify-content-around align-items-lg-center flex-wrap">
           <div className="col-lg-4">
-            <div className='author-image-container'>
+            <div className='author-image-container' ref={refSlideInLeft2}>
               {loaded ? (
                 <AdvancedImage
-                  cldImg={cld.image('profile-pic-highest_u3obmj')}
+                  cldImg={cld.image('profile-pic-1000-high_j3amtu')}
                   plugins={[lazyload()]}
                   alt=""
                   className='author' 
@@ -57,19 +59,12 @@ export default function AboutPage() {
           </div>
           <div className="col-lg-6">
             <div className="container mt-3">
-              <p className="bio-shmed pt-5">
-                Hi, my name is Anthony and I am a full stack web developer. I have a passion for building applications and solving problems using the latest technologies and best practices. When I'm not coding, you can find me rock climbing or enjoying the great outdoors.
+              <h3 className='pb-1'>Who I Am</h3>
+              <p className="bio-shmed">
+                Hi, my name is Anthony and I am a Full-Stack Web Developer. I have a passion for building elegant and unique websites and applications. When I'm not coding, you can find me rock climbing or enjoying the great outdoors.
               </p>
-              <hr/>
-              <ul>
-                <li>Full Stack Web Development</li>
-                <br/>
-                <li>Front End Web Design</li>
-                <br/>
-                <li>Back End Solutions</li>
-                <br/>
-                <li>Software Development</li>
-              </ul>
+              <Link style={{color: 'black', cursor: 'pointer'}} className='redbox' to="/Anthony-Manzione-Portfolio/about-me">Learn More
+              </Link>
               <br/>
             </div>
           </div>

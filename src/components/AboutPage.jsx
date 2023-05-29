@@ -57,7 +57,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="container mt-3">
+            <div className="container mt-5">
               <h3 className='pb-1'>Who I Am</h3>
               <p className="bio-shmed">
                 Hi, my name is Anthony and I am a Full-Stack Web Developer. I have a passion for building elegant and unique websites and applications. When I'm not coding, you can find me rock climbing or enjoying the great outdoors.

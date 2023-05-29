@@ -89,9 +89,8 @@ export default function AboutPageMore() {
             <div className="container mt-5">
               <h3 className='pb-1'>A Little About Me</h3>
               <p className="bio-shmed">
-              Hey there! I'm Anthony Manzione, a Full-Stack Web Developer with a passion for creating websites. It all started in 2020 when I built a website for my construction company. I realized this was my true calling and completed a Full-Stack Web Development certificate program at UC Berkeley in 2021. Since then, I've been continuously honing my skills and staying up-to-date with the latest industry tools. Let's bring your ideas to life through web development! 
+                Hey there! I'm Anthony Manzione, a Full-Stack Web Developer with a passion for creating websites. It all started in 2020 when I built a website for my construction company. I realized this was my true calling and completed a Full-Stack Web Development certificate program at UC Berkeley in 2021. Since then, I've been continuously honing my skills and staying up-to-date with the latest industry tools. Let's bring your ideas to life through web development! 
               </p>
-              <br/>
             </div>
           </div>
         </div>

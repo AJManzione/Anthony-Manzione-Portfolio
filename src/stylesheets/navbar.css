@@ -2,6 +2,7 @@ nav {
   background-color:rgb(15, 15, 36); 
   z-index: 1; 
   border-bottom:rgb(0, 255, 225) solid 4px;
+  position: absolute;
 }
 
 nav ul {

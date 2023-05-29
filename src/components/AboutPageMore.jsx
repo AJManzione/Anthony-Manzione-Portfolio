@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Document, Page } from 'react-pdf';
 import { Link } from 'react-router-dom'
 import { AdvancedImage, lazyload } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/base';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer'
 import { useAnimationOnScroll } from './Animations';
 
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const cld = new Cloudinary({
   cloud: {
@@ -17,7 +18,6 @@ const cld = new Cloudinary({
 });
 
 export default function AboutPageMore() {
-  const refFadeIn = useAnimationOnScroll('fadeIn')
   const refSlideInRight = useAnimationOnScroll('slideInRight');
   const refSlideInLeft = useAnimationOnScroll('slideInLeft');
   const refSlideInRight2 = useAnimationOnScroll('slideInRight');
@@ -25,10 +25,17 @@ export default function AboutPageMore() {
   const refSlideInRight3 = useAnimationOnScroll('slideInRight');
   const refSlideInLeft3 = useAnimationOnScroll('slideInLeft');
   const refSlideInRight4 = useAnimationOnScroll('slideInRight');
+  const refSlideInLeft4 = useAnimationOnScroll('slideInLeft');
 
   document.getElementById('three-animation').style.display = 'none';
   const [loaded, setLoaded] = useState(false);
   const [isMobileSize, setIsMobileSize] = useState(false);
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   const handleLoad = () => {
     setLoaded(true);
@@ -131,6 +138,26 @@ export default function AboutPageMore() {
           <Link className='redbox' to="/Anthony-Manzione-Portfolio/#portfolio">View My Projects</Link>
         </div>
         <br /><br />
+      </div>
+      <div id="about-me-more-three">
+        <svg  
+          preserveAspectRatio="none" viewBox="0 0 100 102" 
+          height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+          class="svgcolor-light">
+          <path d="M0 0 L50 100 L100 0 Z" fill="rgb(46, 46, 58)" stroke="rgb(46, 46, 58)"></path>
+        </svg>
+        <div className="flex-column align-items-center p-5">
+          <h1 className="title text-center" ref={refSlideInRight2}>RESUME</h1>
+          <h5 className="underline" ref={refSlideInLeft4}></h5>
+        </div>
+        <div>
+        <Document
+          file={'https://ajmanzione.github.io/Anthony-Manzione-Portfolio/Manzione_Anthony_Resume_2023.pdf'}
+          onLoadSuccess={onDocumentLoadSuccess}
+          onError={console.error}>
+          <Page pageNumber={pageNumber} />
+        </Document>
+        </div>
       </div>
       <Footer/>
     </div>

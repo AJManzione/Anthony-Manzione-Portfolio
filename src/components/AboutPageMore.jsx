@@ -58,50 +58,58 @@ export default function AboutPageMore() {
   return (
     <div id='about-me-more'>
       <Navbar/>
-      <div className='col-lg-12 pt-5'>
-        <h1 className='text-center' ref={refSlideInRight2}>ABOUT ME</h1>
-        <h5 className='underline' ref={refSlideInLeft2}></h5>
+      <div className="flex-column align-items-center p-5">
+        <h1 className="title text-center" ref={refSlideInRight}>ABOUT</h1>
+        <h5 className="underline" ref={refSlideInLeft}></h5>
       </div>
-      <div className='col-lg-12 d-flex justify-content-between align-items-center p-5 flex-wrap'>
-        <div className='col-lg-6 p-5' id='about-me-more-image-container' ref={refSlideInLeft}>
-          {loaded ? (
-            <AdvancedImage
-              cldImg={cld.image('profile-pic-1000-high_j3amtu')}
-              plugins={[lazyload()]}
-              alt=""
-              className='author' 
-            />
-          ) : (
-            <AdvancedImage
-              cldImg={cld.image("profile-pic-1000-low_kuahkt")}
-              alt=""
-              className="author"
-              onLoad={handleLoad}
-              plugins={[lazyload({ 
-              })]}
-            />
-          )}
+      <div className='container'>
+        <div className="d-flex flex-row justify-content-around align-items-lg-center flex-wrap">
+          <div className="col-lg-4">
+            <div className='author-image-container' ref={refSlideInLeft2}>
+              {loaded ? (
+                <AdvancedImage
+                  cldImg={cld.image('profile-pic-1000-high_j3amtu')}
+                  plugins={[lazyload()]}
+                  alt=""
+                  className='author' 
+                />
+              ) : (
+                <AdvancedImage
+                  cldImg={cld.image("profile-pic-1000-low_kuahkt")}
+                  alt=""
+                  className="author"
+                  onLoad={handleLoad}
+                  plugins={[lazyload({ 
+                  })]}
+                />
+              )}
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="container mt-5">
+              <h3 className='pb-1'>A Little About Me</h3>
+              <p className="bio-shmed">
+              Hey there! I'm Anthony Manzione, a Full-Stack Web Developer with a passion for creating websites. It all started in 2020 when I built a website for my construction company. I realized this was my true calling and completed a Full-Stack Web Development certificate program at UC Berkeley in 2021. Since then, I've been continuously honing my skills and staying up-to-date with the latest industry tools. Let's bring your ideas to life through web development! 
+              </p>
+              <br/>
+            </div>
+          </div>
         </div>
-        <div className="col-lg-6" ref={refSlideInRight}>
-          <h3>A Little About Me</h3>
-          <hr />
-          <p className='bio-small'>
-            Hey there! I'm Anthony Manzione, a Full-Stack Web Developer with a passion for creating websites. It all started in 2020 when I built a website for my construction company. I realized this was my true calling and completed a Full-Stack Web Development certificate program at UC Berkeley in 2021. Since then, I've been continuously honing my skills and staying up-to-date with the latest industry tools. Let's bring your ideas to life through web development! 
-          </p>
-        </div>
-      </div>
+        <br/><br/>
+      </div> 
       <div id='about-me-more-two'>
-      <svg  
-        preserveAspectRatio="none" viewBox="0 0 100 102" 
-        height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-        class="svgcolor-light">
-        <path d="M0 0 L50 100 L100 0 Z" fill="rgb(256, 256, 256)" stroke="rgb(256, 256, 256)"></path>
-      </svg>
+        <svg  
+          preserveAspectRatio="none" viewBox="0 0 100 102" 
+          height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+          class="svgcolor-light">
+          <path d="M0 0 L50 100 L100 0 Z" fill="rgb(256, 256, 256)" stroke="rgb(256, 256, 256)"></path>
+        </svg>
         <div className='col-lg-12 p-5'>
             <h1 className='text-center' ref={refSlideInLeft3}>SKILLS</h1>
             <h5 className='underline-two' ref={refSlideInRight3}></h5>
         </div>
-        <div className='col-lg-12 d-flex justify-content-around align-items-center flex-wrap mt-5' ref={refSlideInRight4}>
+        <div className='col-lg-12 d-flex justify-content-around align-items-center flex-wrap mt-5' 
+          ref={refSlideInRight4}>
           { isMobileSize ? (
             <ul id='skills-box' className='d-flex flex-row justify-content-between w-75 flex-wrap p-3'>
               {skills.flat().map(skill => (
@@ -121,8 +129,9 @@ export default function AboutPageMore() {
           )}  
         </div>
         <div className='col-lg-12 text-center p-5 mt-5'>
-        <Link className='redbox' to="/Anthony-Manzione-Portfolio/#portfolio">View My Projects</Link>
+          <Link className='redbox' to="/Anthony-Manzione-Portfolio/#portfolio">View My Projects</Link>
         </div>
+        <br /><br />
       </div>
       <Footer/>
     </div>

@@ -29,8 +29,7 @@ export default function AboutPage() {
 
   return (
     <section id="about">
-    <br/><br/><br/><br/>
-      <div className="flex-column align-items-sm-center">
+      <div className="flex-column align-items-center p-5">
         <h1 className="title text-center" ref={refSlideInRight}>ABOUT</h1>
         <h5 className="underline" ref={refSlideInLeft}></h5>
       </div>
@@ -65,12 +64,11 @@ export default function AboutPage() {
               </p>
               <Link style={{color: 'black', cursor: 'pointer'}} className='redbox' to="/Anthony-Manzione-Portfolio/about-me">Learn More
               </Link>
-              <br/>
             </div>
           </div>
         </div>
       </div> 
-      <br/>
+      <br /><br />
     </section> 
   )
 }

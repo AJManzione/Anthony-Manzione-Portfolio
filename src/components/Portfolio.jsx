@@ -38,17 +38,18 @@ export default function Portfolio() {
 
   return (
       <section id="portfolio">
-      <br/><br/><br/><br/>
-        <div className="flex-column align-items-sm-center">
+        <svg  
+          preserveAspectRatio="none" viewBox="0 0 100 102" 
+          height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+          class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="rgb(256, 256, 256)" stroke="rgb(256, 256, 256)"></path>
+      </svg>
+        <div className="flex-column align-items-sm-center p-5">
           <h1 className="text-center title" ref={refSlideInLeft} >PROJECTS</h1>
           <h5 className="underline" ref={refSlideInRight} ></h5>
         </div>
         <div className="container mt-5">
           <div className="row">
-            <div className="d-flex justify-content-center mb-4"> 
-              <h4 ref={refRedBox}>Full-Stack</h4>
-            </div>
-
             <div className="col-lg-4" >
               <Link to="/Anthony-Manzione-Portfolio/mickey-n-friends-finder" title="Click Here To Learn More">
                 <figure className="effect-portfolio">
@@ -153,23 +154,9 @@ export default function Portfolio() {
                 </figure>
               </Link>
             </div>
-            <br/><br/><br/><br/><br/><br/>
-
-          {/*             <div class="reveal mt-5">
-              <div class="d-flex justify-content-center mb-4 "> 
-                <h4 class="redbox">Command-Line-Apps</h4>
-              </div>
-              <div class="d-flex flex-row justify-content-center flex-wrap">
-                <div class="col-lg-4 m-3">
-                  <img class="movies" id="cliOne" src="-----X" alt="A command line application gif."></img>
-                </div>
-                <div class="col-lg-4 m-3">
-                  <img id="cliTwo" class="movies" src="-----X" alt="a command line application gif."></img>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
+        <br/><br/>
       </section>
   )
 }

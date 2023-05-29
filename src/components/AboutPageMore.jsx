@@ -127,7 +127,7 @@ export default function AboutPageMore() {
             </div>
           )}  
         </div>
-        <div className='col-lg-12 text-center p-5 mt-5'>
+        <div className='col-lg-12 text-center p-5'>
           <Link className='redbox' to="/Anthony-Manzione-Portfolio/#portfolio">View My Projects</Link>
         </div>
         <br /><br />

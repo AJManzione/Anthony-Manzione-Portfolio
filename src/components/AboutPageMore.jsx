@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Document, Page } from 'react-pdf';
 import { Link } from 'react-router-dom'
 import { AdvancedImage, lazyload } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/base';
@@ -7,6 +6,8 @@ import { useAnimationOnScroll } from './Animations';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+import Resume from '../assets/Manzione_Anthony_Resume_2023.pdf';
 
 const cld = new Cloudinary({
   cloud: {
@@ -30,12 +31,6 @@ export default function AboutPageMore() {
   document.getElementById('three-animation').style.display = 'none';
   const [loaded, setLoaded] = useState(false);
   const [isMobileSize, setIsMobileSize] = useState(false);
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
 
   const handleLoad = () => {
     setLoaded(true);
@@ -150,14 +145,10 @@ export default function AboutPageMore() {
           <h1 className="title text-center" ref={refSlideInRight2}>RESUME</h1>
           <h5 className="underline" ref={refSlideInLeft4}></h5>
         </div>
-        <div>
-        <Document
-          file={'https://ajmanzione.github.io/Anthony-Manzione-Portfolio/Manzione_Anthony_Resume_2023.pdf'}
-          onLoadSuccess={onDocumentLoadSuccess}
-          onError={console.error}>
-          <Page pageNumber={pageNumber} />
-        </Document>
+        <div className='d-flex justify-content-center container'>
+          <embed style={{height:'845px', width:"612px"}}src={Resume}></embed>
         </div>
+        <br /><br />
       </div>
       <Footer/>
     </div>

@@ -41,7 +41,7 @@ export default function AboutPage() {
                 <AdvancedImage
                   cldImg={cld.image('profile-pic-1000-high_j3amtu')}
                   plugins={[lazyload()]}
-                  alt=""
+                  alt=""  
                   className='author' 
                 />
               ) : (

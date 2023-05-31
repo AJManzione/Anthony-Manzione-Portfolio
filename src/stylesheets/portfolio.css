@@ -14,7 +14,17 @@
 
 #aboutMNFF {
   height: fit-content;
+  background-color:rgb(236, 224, 224);  
 }
+
+#about-MNFF-two {
+  background-color:rgb(236, 224, 224);
+}
+
+#about-MNFF-three {
+  background-color: white;
+}
+
 
 #about-wish-list {
   background-color:#ffffff;
@@ -153,8 +163,10 @@
   background-image: -ms-linear-gradient(45deg, rgba(0,38,73,1), rgba(0,13,54,1) 100%);
   background-image: -o-linear-gradient(45deg,rgba(0,38,73,1),rgba(0,13,54,1) 100%);
   background-image: linear-gradient(135deg, rgba(0,38,73,1), rgba(0,13,54,1) 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   overflow: hidden;
-  height: 92vh;
+  height: 110vmin;
 }
 
 .big-movies {
@@ -177,4 +189,19 @@
   font-weight: 500;
   text-decoration: none;
   color: white;
+}
+
+#project-one-details-two {
+  background-color: rgb(236, 224, 224);
+}
+
+#project-one-details-two span a{
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 0, 136);
+}
+
+#skills-box-black {
+  border: rgb(0, 0, 0) solid 1px;
+  margin: auto auto;
 }

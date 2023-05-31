@@ -156,7 +156,7 @@ function Project1() {
         <h1 style={{color:"white"}} className="title" >PRESENTATION</h1>
         <h5 style={{backgroundColor:"white"}} className='underline'></h5>
       </div>
-      <iframe className='big-movies-borderless' src="https://www.youtube.com/embed/ueMGiAj50o8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe className='big-movies-borderless' src="https://www.youtube.com/embed/ueMGiAj50o8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
     <Footer/>
   </div>

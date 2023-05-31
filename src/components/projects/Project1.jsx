@@ -89,15 +89,15 @@ function Project1() {
         </div>
       </div>
 
-    <div className='p-5' id='about-MNFF-two'>
+    <div className='p-3' id='about-MNFF-two'>
       <div id='project-one-details' className="col-lg-12 d-flex flex-row justify-content-around flex-wrap">
-        <div className='col-lg-5 p-2' ref={refSlideInLeft2}>
+        <div className='col-lg-5 pt-5' ref={refSlideInLeft2}>
           <h3 className='title'>SUMMARY</h3>  
           <p>
             Mickey and friends is a collaborative project that was built to allow a user to search for their favorite disney character and get back a list of movies and tv-shows that character appears in, additionally when a user selects a movie or tv-show then they get back information about that movie such as the movie or show poster, the year it was released, a imdb rating, and a brief description of the title.
           </p>
         </div>
-        <div className="col-lg-5 p-2" ref={refSlideInRight2}>
+        <div className="col-lg-5 pt-5" ref={refSlideInRight2}>
           <h3 className="title">MY ROLE</h3>
           <p>
             My role in this project as a developer was implimenting the Fetch API method between two Third Party API's including the Disney API and the Omdb API and parsing that JSON content into a dynamic web experience in an interesting way that made since. Connecting these two API's together was a matter of saving the user input and querying the API's with that input. 
@@ -107,7 +107,7 @@ function Project1() {
     </div>
 
 
-    <div className='m-5' id='about-MNFF-three'>
+    <div className='m-3 ' id='about-MNFF-three'>
       <div className='col-lg-12 p-5 d-flex flex-column align-items-center' ref={refSlideInLeft3}>
         <h1 className="title" ref={refSlideInRight4}>TECHNOLOGY USED</h1>
         <h5 className='underline'></h5>

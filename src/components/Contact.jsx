@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { useAnimationOnScroll } from './Animations';
-import '../stylesheets/contact.css'
 import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
+import { SlideInFromRight, SlideInFromLeft } from './Animations';
+
+import '../stylesheets/contact.css'
 
 function Contact() {
-  const refSlideInRight = useAnimationOnScroll('slideInRight');
-  const refSlideInLeft = useAnimationOnScroll('slideInLeft');
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const [ thankYouMessage, setThankYouMessage] = useState("Have a question or want to work together?");
 
@@ -36,8 +35,12 @@ function Contact() {
       <br/><br/><br/><br/>
       <div className="animation-element slide-right">
         <div className="flex-column align-items-sm-center">
-          <h1 className="text-center" ref={refSlideInRight}>CONTACT</h1>
-          <h5 className="underline" ref={refSlideInLeft}></h5>
+          <SlideInFromLeft>
+            <h1 className="title-light text-center">CONTACT</h1>
+          </SlideInFromLeft>
+          <SlideInFromRight>
+          <h5 className="underline-light"></h5>
+          </SlideInFromRight>
         </div>
       </div>
     <div className="d-flex flex-column align-items-sm-center container">

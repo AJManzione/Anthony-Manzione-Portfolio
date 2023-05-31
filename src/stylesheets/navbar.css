@@ -1,7 +1,7 @@
 nav {
   background-color:rgb(15, 15, 36); 
   z-index: 1; 
-  border-bottom:rgb(0, 255, 225) solid 4px;
+  border-bottom:var(--mint) solid 4px;
   position: absolute;
 }
 
@@ -10,14 +10,14 @@ nav ul {
 }
 
 .sticky-navbar {
-  position: -webkit-sticky;
-  position: sticky;
+  position: -webkit-sticky !important;
+  position: sticky !important;
   top: 0;
   z-index: 1;
 }
 
 a:hover {
-  color: rgb(255, 0, 136);
+  color: var(--redish);
   transition: .635s;
 }
 
@@ -42,7 +42,7 @@ nav a {
 
 
 nav span a {
-  color: rgb(255, 0, 136);
+  color: var(--redish);
 }
 
 #nav-icon-mobile {

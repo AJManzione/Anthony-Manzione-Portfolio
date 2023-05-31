@@ -47,6 +47,15 @@ p {
   font-weight: 600;
 }
 
+#about-me-more {
+  background-color: rgb(236, 224, 224);
+}
+
+#about-me-more-one {
+  background-color: white;
+  padding-bottom: 6vw;
+}
+
 #about-me-more li {
   list-style: none; 
   height: 4vh;
@@ -63,6 +72,8 @@ p {
 
 #about-me-more-two {
   background-color: rgb(46, 46, 58);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
 #about-me-more-two h1, .redbox, .redbox:hover, a {

@@ -1,36 +1,54 @@
-import { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useSpring, animated } from 'react-spring';
 
-export function useAnimationOnScroll(animationClass) {
-  const ref = useRef();
+export const SlideInFromRight = ({ children }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: false, 
+  });
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(animationClass);
-          } else {
-            entry.target.classList.remove(animationClass);
-          }
-        });
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 1e-30
-      }
-    );
+  const animation = useSpring({
+    transform: inView ? 'translate3d(0%, 0, 0)' : 'translate3d(100%, 0, 0)',
+    config: { mass: 5, tension: 500, friction: 70 },
+  });
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+  return (
+    <animated.div ref={ref} style={animation}>
+      {children}
+    </animated.div>
+  );
+};
 
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [animationClass]);
+export const SlideInFromLeft = ({ children }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: false, 
+  });
 
-  return ref;
-}
+  const animation = useSpring({
+    transform: inView ? 'translate3d(0%, 0, 0)' : 'translate3d(-100%, 0, 0)',
+    config: { mass: 5, tension: 500, friction: 70 },
+  });
+
+  return (
+    <animated.div ref={ref} style={animation}>
+      {children}
+    </animated.div>
+  );
+};
+
+export const SlideUpFadeIn = ({ children }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: false, 
+  });
+
+  const animation = useSpring({
+    transform: inView ? 'translate3d(0, 0, 0)' : 'translate3d(0, 20%, 0)',
+    opacity: inView ? 1 : 0,
+    config: { mass: 5, tension: 300, friction: 70 },
+  });
+
+  return (
+    <animated.div ref={ref} style={animation}>
+      {children}
+    </animated.div>
+  );
+};

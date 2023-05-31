@@ -4,21 +4,54 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  color: rgb(56, 56, 77);
   font-family: 'DM Sans';
   line-height: 1.5;
   text-decoration: none;
 }
 
+:root {
+  --letter-gray: rgb(59,59,59);
+  --dark-bluish-gray: rgb(33, 33, 42);
+  --bluish-gray: rgb(46, 46, 58);
+  --light-bluish-gray: rgb(63, 63, 81);
+  --redish: rgb(221, 0, 118);
+  --mint: rgb(0, 255, 225);
+  --light-gray: rgb(236, 224, 224);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+
 .title {
   font-weight: 700;
   letter-spacing: 1px;
+  color: var(--letter-gray);
+}
+
+.title-light {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .underline {
   width: 60px;
   height: 4px;
-  background-color: rgb(59,59,59);
+  background-color: var(--letter-gray);
+  margin: auto;
+}
+
+.underline-light {
+  width: 60px;
+  height: 4px;
+  background-color: white;
   margin: auto;
 }
 
@@ -48,7 +81,7 @@
 
 .redbox {
   border: none;
-  --c: rgb(221, 0, 118); /* the border color */
+  --c: var(--redish);
   --b: 2px;    /* the border thickness*/
   --g: 5px;     /* the gap on hover */
   
@@ -59,59 +92,10 @@
      var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
     conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
      0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .redbox:hover {
   --_i: 100%;
   transition: .3s, background-size .3s .3s;
-}
-
-/* ------------------------------------------ A N I M A T I O N S ------------------------------------------------ */
-
-/* Fade in animation */
-@keyframes fadeIn {
-  from { opacity: 0;}
-  to { opacity: 1; }
-}
-
-.fadeIn {
-  animation: fadeIn 3.236s forwards;
-  animation-delay: .2s;
-}
-
-/* Slide in from the right animation */
-@keyframes slideInRight {
-  from {
-    opacity: .5;
-    transform: translateX(20%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slideInRight {
-  animation-name: slideInRight;
-  animation-duration: 1.618s; /* adjust as needed */
-  animation-fill-mode: forwards; /* makes sure the animation stays at the last frame when finished */
-}
-
-/* Slide in from the left animation */
-@keyframes slideInLeft {
-  from {
-    opacity: .5;
-    transform: translateX(-20%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slideInLeft {
-  animation-name: slideInLeft;
-  animation-duration: 1.618s; /* adjust as needed */
-  animation-fill-mode: forwards; /* makes sure the animation stays at the last frame when finished */
 }

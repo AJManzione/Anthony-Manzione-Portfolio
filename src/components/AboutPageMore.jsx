@@ -130,7 +130,7 @@ export default function AboutPageMore() {
           )}  
         </div>
         <div className='col-lg-12 text-center p-5'>
-          <Link className='redbox' to="/Anthony-Manzione-Portfolio/#portfolio">View My Projects</Link>
+          <Link className='redbox' style={{color:'white'}} to="/Anthony-Manzione-Portfolio/#portfolio">View My Projects</Link>
         </div>
         <br /><br />
       </div>
@@ -145,8 +145,10 @@ export default function AboutPageMore() {
           <h1 className="title text-center" ref={refSlideInRight2}>RESUME</h1>
           <h5 className="underline" ref={refSlideInLeft4}></h5>
         </div>
-        <div className='d-flex justify-content-center container'>
-          <embed style={{height:'845px', width:"612px"}}src={Resume}></embed>
+        <div className='d-flex flex-column align-items-center'>
+          <a href={Resume} __blank>View My Resume</a>
+          <br />
+          <a href={Resume} download={Resume}>Download My Resume</a>        
         </div>
         <br /><br />
       </div>

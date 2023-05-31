@@ -52,6 +52,7 @@ p {
   height: 4vh;
   font-size: 1.2rem;
 }
+
 #about-me-more li:hover {
   color: rgb(255, 0, 136);
 }
@@ -64,8 +65,9 @@ p {
   background-color: rgb(46, 46, 58);
 }
 
-#about-me-more-two h1, .redbox, .redbox:hover {
+#about-me-more-two h1, .redbox, .redbox:hover, a {
   color: white;
+  text-decoration: none;
 }
 
 #about-me-more-two, li {
@@ -74,6 +76,16 @@ p {
 
 #about-me-more-three {
   background-color:rgb(236, 224, 224);
+}
+
+#about-me-more-three a {
+  color: black;
+  text-decoration: none;
+}
+
+#about-me-more-three a:hover {
+  color: rgb(255, 0, 136) ;
+  transition: .2s ease-in-out;
 }
 
 #skills-box {

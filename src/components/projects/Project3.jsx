@@ -27,7 +27,6 @@ function Project3() {
   return (
     <div id='project-three' style={{backgroundColor:"rgb(236, 224, 224)"}}>
       <div className='project-container d-flex flex-column justify-content-center'>
-        <Navbar/>
         <div className='big-movies-container'>
           <div className="d-flex flex-column justify-content-center align-items-lg-center mt-5">
             <AdvancedImage

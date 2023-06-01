@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Navbar from './Navbar';
-import AboutPage from './AboutPage';
+import About from './about/About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -10,7 +10,7 @@ function HomePage() {
   return (
     <div>
       <Navbar/>
-      <AboutPage/>
+      <About/>
       <Portfolio/>
       <Contact/>
       <Footer/>

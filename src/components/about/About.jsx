@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AdvancedImage, lazyload } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/base';
-import { SlideInFromRight, SlideInFromLeft, SlideUpFadeIn } from './Animations';
+import { SlideInFromRight, SlideInFromLeft, SlideUpFadeIn } from '../Animations';
 
-import '../stylesheets/aboutpage.css';    
+import '../../stylesheets/aboutpage.css';    
 
 const cld = new Cloudinary({
   cloud: {
@@ -15,7 +15,7 @@ const cld = new Cloudinary({
   },
 });
 
-export default function AboutPage() {
+function About() {
 
   document.getElementById('three-animation').style.display = 'block';
 
@@ -59,3 +59,5 @@ export default function AboutPage() {
     </section> 
   )
 }
+
+export default About;

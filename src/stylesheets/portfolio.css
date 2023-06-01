@@ -2,10 +2,11 @@
   background-color: var(--light-gray);
   height: fit-content; 
   padding-bottom: 20vh;
-  overflow-x: hidden;
 }
 
-#project-one, #project-two, #project-three {
+#project-one
+#project-two
+#project-three {
   overflow-x: hidden;
 }
 
@@ -29,7 +30,6 @@
 #about-wishList p{
   font-size: 1.3rem;
 }
-
 
 .movies {
   width: 100%;

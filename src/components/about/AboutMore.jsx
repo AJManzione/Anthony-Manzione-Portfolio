@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { AdvancedImage, lazyload } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/base';
-import { SlideInFromRight, SlideInFromLeft, SlideUpFadeIn } from './Animations';
+import { SlideInFromRight, SlideInFromLeft, SlideUpFadeIn } from '../Animations';
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
-import Resume from '../assets/Manzione_Anthony_Resume_2023.pdf';
+import Resume from '../../assets/Manzione_Anthony_Resume_2023.pdf';
 
 const cld = new Cloudinary({
   cloud: {
@@ -18,7 +15,7 @@ const cld = new Cloudinary({
   },
 });
 
-export default function AboutPageMore() {
+function AboutMore() {
   document.getElementById('three-animation').style.display = 'none';
 
   const [isMobileSize, setIsMobileSize] = useState(false);
@@ -51,7 +48,6 @@ export default function AboutPageMore() {
 
   return (
     <div id='about-me-more'>
-      <Navbar/>
       <div id='about-me-more-one'>
         <div className="flex-column align-items-center p-5">
           <SlideInFromRight>
@@ -140,7 +136,8 @@ export default function AboutPageMore() {
         </div>
         <br /><br />
       </div>
-      <Footer/>
     </div>
   )
 }
+
+export default AboutMore;

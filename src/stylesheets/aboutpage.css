@@ -1,5 +1,6 @@
 #about {
   background-color: #ffffff; 
+  overflow-x: hidden;
 }
 
 #about h1 {
@@ -49,6 +50,7 @@ p {
 
 #about-me-more {
   background-color: rgb(236, 224, 224);
+  overflow-x: hidden;
 }
 
 #about-me-more-one {

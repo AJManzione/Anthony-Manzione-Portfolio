@@ -2,6 +2,11 @@
   background-color: var(--light-gray);
   height: fit-content; 
   padding-bottom: 20vh;
+  overflow-x: hidden;
+}
+
+#project-one, #project-two, #project-three {
+  overflow-x: hidden;
 }
 
 #portfolio p {
@@ -9,7 +14,7 @@
 }
 
 .project-technologies {
-  background-color: white
+  background-color: white;
 }
 
 .project-presentation {

@@ -37,6 +37,10 @@ export default function AboutPageMore() {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const skills = [
   ["HTML", "CSS", "Javascript", "Python", "Node", "C#", ".NET"],
   ["Bootstrap", "Figma", "Photoshop", "Illustrator", "Premiere", "Tailwind.css"],

@@ -19,10 +19,6 @@
   --light-gray: rgb(236, 224, 224);
 }
 
-body {
-  overflow-x: hidden;
-}
-
 a, li {
   text-decoration: none;
   list-style: none;

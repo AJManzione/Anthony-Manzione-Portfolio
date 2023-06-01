@@ -1,6 +1,7 @@
 #contact {
   background-color: var(--bluish-gray);
   height: fit-content;
+  overflow-x: hidden;
 }
 
 #contact p {

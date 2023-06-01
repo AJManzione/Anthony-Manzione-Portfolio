@@ -25,7 +25,7 @@ function Project2() {
   }, []);
 
   return (
-    <div style={{backgroundColor:"rgb(236, 224, 224)"}}>
+    <div id='project-two' style={{backgroundColor:"rgb(236, 224, 224)"}}>
       <div className='project-container d-flex flex-column justify-content-center'>
         <Navbar/>
         <div className='big-movies-container'>

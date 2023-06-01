@@ -3,6 +3,7 @@ nav {
   z-index: 1; 
   border-bottom:var(--mint) solid 4px;
   position: absolute;
+  overflow-x: hidden;
 }
 
 nav ul {

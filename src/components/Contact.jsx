@@ -29,7 +29,7 @@ function Contact() {
       <svg  
         preserveAspectRatio="none" viewBox="0 0 100 102" 
         height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-        class="svgcolor-light">
+        className="svgcolor-light">
         <path d="M0 0 L50 100 L100 0 Z" fill="rgb(236, 224, 224)" stroke="rgb(236, 224, 224)"></path>
       </svg>
       <br/><br/><br/><br/>
@@ -39,7 +39,7 @@ function Contact() {
             <h1 className="title-light text-center">CONTACT</h1>
           </SlideInFromLeft>
           <SlideInFromRight>
-          <h5 className="underline-light"></h5>
+            <h5 className="underline-light"></h5>
           </SlideInFromRight>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Contact() {
           <input 
             name='name'
             {...register('name', { required: true })}
-            class="w-100 p-2 mb-3"
+            className="w-100 p-2 mb-3"
             placeholder="Name"
             type="name"
           />
@@ -58,7 +58,7 @@ function Contact() {
           <input 
             name='email'
             {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
-            class="w-100 p-2 mb-3"
+            className="w-100 p-2 mb-3"
             placeholder="Email"
             type="email"
           />
@@ -66,12 +66,12 @@ function Contact() {
           <textarea 
             name='message'
             {...register('message', { required: true })}
-            class="w-100 p-2 mb-3 text-start"
+            className="w-100 p-2 mb-3 text-start"
             placeholder="Message"
             type="text"
           />
             {errors.message && <p>* <span> This field is required, Write me a Message.</span></p>}
-          <button type='submit' class="float-end mt-2">SUBMIT</button>
+          <button type='submit' className="float-end mt-2">SUBMIT</button>
         </form>
       </div>
     </div>

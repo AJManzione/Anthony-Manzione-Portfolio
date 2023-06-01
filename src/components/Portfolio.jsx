@@ -25,7 +25,7 @@ export default function Portfolio() {
         <svg  
           preserveAspectRatio="none" viewBox="0 0 100 102" 
           height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-          class="svgcolor-light">
+          className="svgcolor-light">
         <path d="M0 0 L50 100 L100 0 Z" fill="rgb(256, 256, 256)" stroke="rgb(256, 256, 256)"></path>
       </svg>
         <div className="flex-column align-items-sm-center p-5">
@@ -81,7 +81,7 @@ export default function Portfolio() {
                       <div className="caption">
                         <h1>WISH LIST</h1>
                       </div>
-                      <div class="slide-in">
+                      <div className="slide-in">
                         <p>Login and Create an Acount</p>
                         <p>Create Wish Lists and Registry's</p>
                         <p>Add, Edit, Remove Items, Budget, and Share!</p>

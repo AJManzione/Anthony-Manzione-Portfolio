@@ -51,10 +51,10 @@ function AboutMore() {
       <div id='about-me-more-one'>
         <div className="flex-column align-items-center p-5">
           <SlideInFromRight>
-          <h1 className="title text-center">ABOUT</h1>
+            <h1 className="title text-center">ABOUT</h1>
           </SlideInFromRight>
           <SlideInFromLeft>
-          <h5 className="underline"></h5>
+            <h5 className="underline"></h5>
           </SlideInFromLeft>
         </div>
         <SlideUpFadeIn>
@@ -105,10 +105,10 @@ function AboutMore() {
           ) : (
             <div className='col-lg-10 d-flex justify-content-around' id='skills-box'>
               {skills.map((skillColumn, i) => (
-                <SlideUpFadeIn>
-                  <ul key={i} className=' p-3 m-0'>
+                <SlideUpFadeIn key={i}>
+                  <ul className=' p-3 m-0'>
                     {skillColumn.map(skill => (
-                      <li key={skill}>{skill}</li>
+                      <li key={`${i}-${skill}`}>{skill}</li>  // combining index with skill name for a unique key
                     ))}
                   </ul>
                 </SlideUpFadeIn>
